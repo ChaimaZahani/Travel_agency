@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Venise</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="destinatins1.css">
+</head>
+ <body>
+	  <header>
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="">Acueill |</a></li>
+                        <li><a href="#steps">Description |</a></li>
+                        <li><a href="#best-sales-container">Meilleures Hotels |</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<div id="slider">
+	
+    <ul id="slideWrap">
+        <li> <img src="italie/venise/bellissimo.jpg"></li>
+        <li> <img src="italie/venise/experience-erasmus-a-venise-italie-63309b8894e8353d7895959423fc6133.jpg"> </li>
+        <li><img src="italie/venise/iStock_46724816_XXXLARGE.jpg"></li>
+        <li> <img src="italie/venise/téléchargement (1).jpg"></li>
+        <li> <img src="italie/venise/téléchargement.jpg"></li>
+    </ul>
+    <a id="next" href="#">&#8811;</a>
+    <a id="prev" href="#">&#8810;</a>
+    <script>var responsiveSlider = function() {
+
+        var slider = document.getElementById("slider");
+        var sliderWidth = slider.offsetWidth;
+        var slideList = document.getElementById("slideWrap");
+        var count = 1;
+        var items = slideList.querySelectorAll("li").length;
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        
+        window.addEventListener('resize', function() {
+          sliderWidth = slider.offsetWidth;
+        });
+        
+        var prevSlide = function() {
+          if(count > 1) {
+            count = count - 2;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = 1) {
+            count = items - 1;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+        };
+        
+        var nextSlide = function() {
+          if(count < items) {
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = items) {
+            slideList.style.left = "0px";
+            count = 1;
+          }
+        };
+        
+        next.addEventListener("click", function() {
+          nextSlide();
+        });
+        
+        prev.addEventListener("click", function() {
+          prevSlide();
+        });
+        
+        setInterval(function() {
+          nextSlide()
+        }, 8000);
+        
+        };
+        
+        window.onload = function() {
+        responsiveSlider();  
+        }</script>
+</div>
+<!--==================== Descriptions ====================-->
+ <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Description</h1>
+                    <div class="container">
+                    <img src="italie/venise/venise.jpg" alt="venise" >
+                    <p><br>Venise est une ville enchanteresse qui envoute ses visiteurs par son charme incroyable. C'est un lieu de rêve et de romantisme où se mêlent le mystère et le drame. Et si le Carnaval n'a lieu qu'une fois par an, son ambiance est présente tout au long de l'année. Le Grand Canal est le centre de l'activité, les gondoliers chantant pour les passagers installés dans leurs petites embarcations. La magnifique Place Saint-Marc est un autre endroit incontournable de la cité. Déambulez dans les rues sinueuses à la découverte d'élégants cafés et glaciers, de boutiques de souvenirs et de petits commerces, sans oublier les palais de style Renaissance et les églises gothiques. Montez au sommet du Campanile et visitez les Galeries de l'Académie, puis explorez les quartiers alentour où les locaux dégustent des cicchetti accompagnés d'un verre de vin dans les bars et restaurants à l'ambiance détendue.
+
+                        <br>  <br>
+                        <br>  <br>
+                        <br> <br>
+                    </p>
+                  
+            </section>
+<!--==================== Les immanquables ====================-->
+<section class="best-sales-container" id="best-sales">
+    <h1 class="section-title">Les immanquables</h1>
+
+</section>
+
+<section class="packages" id="packages">
+<div class="box-container">
+
+<div class="box">
+<img src="italie/venise/1.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building "></i> Palais des Doges</h3>
+   <p>Musées spécialisés • Sites historiques • Bâtiments architecturaux</p>
+    <div class="price"> Billets d'entrée à partir de €39.90</div>
+    <a href="https://palazzoducale.visitmuve.it/" class="btn">VOIR PLUS</a>
+
+</div>
+</div>
+<div class="box">
+<img src="italie/venise/2.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i>Basilique Saint-Marc</h3>
+   <p>
+    Monuments & Points d'intérêt • Bâtiments architecturaux • Églises et cathédrales</p>
+    <a href="http://www.basilicasanmarco.it/" class="btn">VOIR PLUS</a>
+
+</div>
+</div>
+
+<div class="box">
+<img src="italie/venise/3.jpg" alt="">
+<div class="content">
+   <h3>  Grand Canal   </h3>
+   <p>
+    Plans d'eau</p>
+
+</div>
+</div>
+
+<div class="box">
+<img src="italie/venise/4.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i> Campanile di San Marco</h3>
+   <p>
+    Sites historiques • Monuments & Points d'intérêt • Bâtiments architecturaux • Tours et plateformes d'observation</p>
+   <a href="http://www.basilicasanmarco.it/basilica/campanile/?lang=en" class="btn">VOIR PLUS</a>
+
+</div>
+</div>
+
+
+
+
+
+</div>
+</section>
+<!--==================== RESTAURANTS ====================-->
+<section class="best-sales-container" id="best-sales">
+    <h1 class="section-title">Restaurants</h1>
+
+</section>
+
+<section class="packages" id="packages">
+<div class="box-container">
+
+<div class="box">
+<img src="italie/venise/food1.jpg" alt="">
+<div class="content">
+   <h3>  Al Covo   </h3>
+   <p>Castello 3968, Venise Italie</p>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
+    <div class="price">+39 041 522 3812</div>
+    <a href="https://ristorantealcovo.com/" class="btn">VOIR PLUS</a>
+    </div>
+    </div>
+    <div class="box">
+        <img src="italie/venise/food2.jpg" alt="">
+        <div class="content">
+            <h3> Osteria alle Testiere </h3>
+            <p>Calle del Mondo Novo, 5801, 30122 Venise Italie</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price">+39 041 522 7220</div>
+            <div><br>
+                <br></div>
+            <a href="http://www.osterialletestiere.it/" class="btn">VOIR PLUS</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="italie/venise/food3.jpg" alt="">
+        <div class="content">
+            <h3>  All'Arco    </h3>
+            <p>Sestiere San Polo 436, 30125 Venise Italie</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price"> +39 041 520 5666  </div>
+            <div><br>
+                <br></div>
+            <a href="https://www.google.com/travel/hotels/Italie/entity/CgsIov393ePMrNrRARAB?g2lb=4258168%2C4596364%2C4597339%2C4419364%2C4317915%2C4371335%2C4270442%2C4649665%2C4640247%2C4688539%2C4306835%2C4624411%2C2503771%2C4401769%2C4689873%2C2502548%2C2503781%2C4605861%2C4641139%2C4270859%2C4291517%2C4284970&hl=fr-TN&gl=tn&ssta=1&ap=aAE&q=all%27arco%20hotel%20italie&rp=EKL9_d3jzKza0QEQ1ry7huLSjL94OAJAAEgCogEGSXRhbGllwAEDyAEA&ictx=1&ved=0CAAQ5JsGahcKEwiIiarK1IH1AhUAAAAAHQAAAAAQBA&utm_campaign=sharing&utm_medium=link&utm_source=htls&ts=CAESABogCgIaABIaEhQKBwjmDxABGBMSBwjmDxABGBQYATICEAAqCQoFOgNUTkQaAA" class="btn">VOIR PLUS</a>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+</section>
+ <!--==================== Hotels ====================-->
+            <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Meilleures Hotels</h1>
+   
+            </section>
+            
+        <section class="packages" id="packages">
+    <div class="box-container">
+
+        <div class="box">
+            <img src="italie/venise/h1.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Hotel Antiche Figure </h3>
+                <p>Santa Croce, 687 Fondamenta San Simeon Piccolo, 30135 Venise Italie</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> A partir de 636 TND</div>
+                <div><br>
+                <br></div>
+                <a href="https://www.hotelantichefigure.it/?utm_source=TripAdvisor%20BL&utm_medium=Link&utm_campaign=Profilo_Aziendale_TripAdvisor" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+        <div class="box">
+            <img src="italie/venise/h2.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>H10 Palazzo Canova </h3>
+                <p>Riva Del Vin 744, 30125 Venise Italie</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">A partir de 1 082 TND </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.h10hotels.com/fr/hotels-venise/h10-palazzo-canova?&utm_source=Tripadvisor&utm_medium=BusinessList&utm_campaign=HPC&tc_alt=32594" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="italie/venise/h4.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> San Clemente Palace Kempinski</h3>
+                <p>VIsola di San Clemente 1, 30124 Venise Italie</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> A partir de   2 437 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.kempinski.com/en/venice/san-clemente-palace-kempinski/" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="italie/venise/h3.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Hotel Palazzo Abadessa </h3>
+                <p>Calle Priuli Cannaregio 4011, 30121 Venise Italie</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">A partir de  573 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="http://www.abadessa.com/fr/" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="italie/venise/h5.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Duodo Palace Hotel</h3>
+                <p>Calle Minelli San Marco 1887/1888 San Marco, 30124 Venise Italie </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 696 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.duodopalacehotel.com/?utm_source=tripadvisor&utm_medium=referral&utm_campaign=business_listing" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="italie/venise/h6.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>  Hotel Canal Grande</h3>
+                <p>Santa Croce, 932 Campo San Simeon Grande, 30135 Venise Italie </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 616 TND </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.hotelcanalgrande.it/?utm_source=TripAdvisor%20BL&utm_medium=Link&utm_campaign=Profilo_Aziendale_TripAdvisor" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+    </div>
+    </section>
+  <section id="contact">
+            <div class="wrapper">
+                <h3>Contactez-nous</h3>
+                <p>nous  savons que voyager est une aventure humaine mais également un engagement financier important pour vous. C'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos attentes pour vous aider dans la préparation de votre séjour, circuit ou voyage sur mesure.</p>
+                
+                <form>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="Votre nom">
+                    <label for="email">Email</label>
+                    <input type="text" id="name" placeholder="Votre email">
+                    <input type="submit" value="Ok" class="button-3">
+                    
+                </form>
+            </div>  
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

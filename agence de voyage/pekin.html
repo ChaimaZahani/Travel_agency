@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>pékin</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="destinatins1.css">
+</head>
+ <body>
+	  <header>
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="">Acueill |</a></li>
+                        <li><a href="#steps">Description |</a></li>
+                        <li><a href="#best-sales-container">Meilleures Hotels |</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<div id="slider">
+	
+    <ul id="slideWrap">
+        <li> <img src="chine/pekin/beijing.jpg"></li>
+        <li> <img src="chine/pekin/caption.jpg"> </li>
+        <li><img src="chine/pekin/mera-peak-kachenjug-reason.jpg"></li>
+        <li> <img src="chine/pekin/mutianyu-great-wall.jpg"></li>
+        <li> <img src="chine/pekin/temple-of-heaven.jpg"></li>
+        <li> <img src="chine/pekin/the-great-wall-hero.jpg"></li>
+    </ul>
+    <a id="next" href="#">&#8811;</a>
+    <a id="prev" href="#">&#8810;</a>
+    <script>var responsiveSlider = function() {
+
+        var slider = document.getElementById("slider");
+        var sliderWidth = slider.offsetWidth;
+        var slideList = document.getElementById("slideWrap");
+        var count = 1;
+        var items = slideList.querySelectorAll("li").length;
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        
+        window.addEventListener('resize', function() {
+          sliderWidth = slider.offsetWidth;
+        });
+        
+        var prevSlide = function() {
+          if(count > 1) {
+            count = count - 2;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = 1) {
+            count = items - 1;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+        };
+        
+        var nextSlide = function() {
+          if(count < items) {
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = items) {
+            slideList.style.left = "0px";
+            count = 1;
+          }
+        };
+        
+        next.addEventListener("click", function() {
+          nextSlide();
+        });
+        
+        prev.addEventListener("click", function() {
+          prevSlide();
+        });
+        
+        setInterval(function() {
+          nextSlide()
+        }, 8000);
+        
+        };
+        
+        window.onload = function() {
+        responsiveSlider();  
+        }</script>
+</div>
+<!--==================== Descriptions ====================-->
+ <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Description</h1>
+                    <div class="container">
+                    <img src="chine/pékin.jpg" alt="Canton" >
+                    <p><br>Bienvenue dans une capitale forte d'une histoire de plus de 3 000 ans. Les vestiges de cette ville au passé fabuleux vous enchanteront, des plus anciens, comme le Palais de l'Harmonie suprême, le palais d'Été et la Cité interdite, aux plus récents, comme le mausolée de Mao Zedong et la place Tian'anmen, pour n'en citer que quelques-uns. Pour une expérience plus authentique et stimulante que l'exploration du très touristique marché de la soie, partez faire un tour au Panjiayuan Market, un marché aux puces particulièrement coloré. Enfin, la Grande Muraille de Chine, la plus importante structure jamais construite, constitue une étape incontournable de votre voyage.
+
+                        <br>  <br>
+                        <br>  <br>
+                        <br> <br>
+                    </p>
+                  
+            </section>
+<!--==================== Les immanquables ====================-->
+<section class="best-sales-container" id="best-sales">
+    <h1 class="section-title">Les immanquables</h1>
+
+</section>
+
+<section class="packages" id="packages">
+<div class="box-container">
+
+<div class="box">
+<img src="chine/pekin/1.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building "></i>Section de la Grande Muraille de Mutianyu</h3>
+   <p>
+    Ruines anciennes • Monuments & Points d'intérêt • Chemins de randonnées</p>
+    <a href="http://www.mutianyugreatwall.com/" class="btn">VOIR PLUS</a>
+    
+
+</div>
+</div>
+<div class="box">
+<img src="chine/pekin/2.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i>Musée du palais</h3>
+   <p> Musées spécialisés • Bâtiments architecturaux • Musées d'histoire</p>
+    <a href="https://www.dpm.org.cn/Home.html" class="btn">VOIR PLUS</a>
+
+</div>
+</div>
+
+<div class="box">
+<img src="chine/pekin/3.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i> Le temple des Lamas (Temple de Yonghe ) </h3>
+   <p>Musées d'histoire</p>
+    <a href="http://www.yonghegong.cn/" class="btn">VOIR PLUS</a>
+</div>
+</div>
+
+<div class="box">
+<img src="chine/pekin/4.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i> Parc Beihai</h3>
+   <p>
+    Plans d'eau • Monuments & Points d'intérêt • Parcs</p>
+   <a href="https://www.beihaipark.com.cn/" class="btn">VOIR PLUS</a>
+
+</div>
+</div>
+</div>
+</section>
+<!--==================== RESTAURANTS ====================-->
+<section class="best-sales-container" id="best-sales">
+    <h1 class="section-title">Restaurants</h1>
+
+</section>
+
+<section class="packages" id="packages">
+<div class="box-container">
+
+<div class="box">
+<img src="chine/pekin/food1.jpg" alt="">
+<div class="content">
+   <h3> TRB Forbidden City
+
+</h3>
+   <p>No.95 Donghuamen Main Street, Dongcheng District, Pékin 100006 Chine</p>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
+    <div class="price">+86 10 6401 6676</div>
+    <a href="http://trb-forbiddencity.com/" class="btn">VOIR PLUS</a>
+    </div>
+    </div>
+    <div class="box">
+        <img src="chine/pekin/food2.jpg" alt="">
+        <div class="content">
+            <h3> Country Kitchen
+            </h3>
+            <p>Jing Guang Centre, Hujialou, Chaoyang District Rosewood Beijing, Pékin 100020 Chine</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price">+86 10 6536 0066</div>
+            <div><br>
+                <br></div>
+            <a href="https://www.rosewoodhotels.com/en/beijing/dining/country-kitchen" class="btn">VOIR PLUS</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="chine/pekin/food3.jpg" alt="">
+        <div class="content">
+            <h3> Opera Bombana
+            </h3>
+            <p>LG2-21 Parkview Green FangCaoDi n.9 Dongdaqiao Road, Chaoyang District, Pékin Chine</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price"> +86 10 5690 7177</div>
+            <div><br>
+                <br></div>
+            <a href="http://www.operabombana.com/" class="btn">VOIR PLUS</a>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+</section>
+ <!--==================== Hotels ====================-->
+            <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Meilleures Hotels</h1>
+   
+            </section>
+            
+        <section class="packages" id="packages">
+    <div class="box-container">
+
+        <div class="box">
+            <img src="chine/pekin/h1.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>JW Marriott Hotel Beijing Central</h3>
+                <p>18 Xuanwumenwai Street, Xicheng District, Pékin 100052 Chine</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> A partir de 710 TND</div>
+                <div><br>
+                <br></div>
+                <a href="https://www.marriott.fr/search/default.mi?&showErrors=true&dclid=CjkKEQiAwqCOBhCznrrEtsbw07gBEiQAr97T_4z26qDcWKYVj4VwCM7k8Oc8tZ-lGbsbyUd7NuHQ96vw_wcB" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+        <div class="box">
+            <img src="chine/pekin/h2.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Kerry Hotel Beijing </h3>
+                <p>No.1 Guanghua Road, Pékin 100020 Chine</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 605 TND </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.shangri-la.com/beijing/kerry/?WT.mc_id=SLIM_20190801_GLOBAL_TABA_TRIPADVISOR_ALWAYSON_WEBSITE-TA-TEXTLINK_TABA-Website-2019_NA-NA-NA&refid=3ba57b9b-eec6-4960-a191-27b9975614c0&checkInDate=2022-05-26&checkOutDate=2022-05-27&rooms=%5B%7B%22adultNum%22%3A2%2C%22childNum%22%3A0%7D%5D&utm_source=tripadvisor_ba" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="chine/pekin/h3.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>The Westin Beijing Chaoyang
+                </h3>
+                <p>No.7 East Third Ring North Road, Chaoyang District, Pékin 100027 Chine</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> A partir de   503 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.marriott.com/hotels/travel/bjswi-the-westin-beijing-chaoyang/" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="chine/pekin/h4.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Pan Pacific Beijing</h3>
+                <p>No.2 Huayuan Street,Xidan Xicheng District, Pékin 100032 Chine</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de  657 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.panpacific.com/en/hotels-and-resorts/pp-beijing.html?utm_source=tripadvisor&utm_medium=business_listing&utm_campaign=hotel_website&property=pppek" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="chine/pekin/h5.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Sheraton Beijing Lize Hotel </h3>
+                <p>Building No.1, Compound No.8, Xiying Street, Fengtai District, Pékin 100073 Chine
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">A partir de 494 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.marriott.com/hotels/travel/bjssl-sheraton-beijing-lize-hotel/" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="chine/pekin/h6.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Yuyang Hotel</h3>
+                <p>No.18 Xinyuan Xili Middle Street, Chaoyang District, Pékin 100027 Chine</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 278 TND </div>
+                <div><br>
+                    <br></div>
+                <a href="http://www.yuyanghotel.net/english/" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+    </div>
+    </section>
+  <section id="contact">
+            <div class="wrapper">
+                <h3>Contactez-nous</h3>
+                <p>nous  savons que voyager est une aventure humaine mais également un engagement financier important pour vous. C'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos attentes pour vous aider dans la préparation de votre séjour, circuit ou voyage sur mesure.</p>
+                
+                <form>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="Votre nom">
+                    <label for="email">Email</label>
+                    <input type="text" id="name" placeholder="Votre email">
+                    <input type="submit" value="Ok" class="button-3">
+                    
+                </form>
+            </div>  
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

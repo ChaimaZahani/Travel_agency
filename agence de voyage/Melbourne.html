@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Melbourne</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="destinatins1.css">
+</head>
+ <body>
+	  <header>
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="">Acueill |</a></li>
+                        <li><a href="#steps">Description |</a></li>
+                        <li><a href="#best-sales-container">Meilleures Hotels |</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<div id="slider">
+	
+    <ul id="slideWrap">
+        <li> <img src="australia/Melbourne/5.jpg"> </li>
+        <li><img src="australia/Melbourne/4.jpg"></li>
+        <li> <img src="australia/Melbourne/3.jpg"></li>
+        <li> <img src="australia/Melbourne/2.jpg"></li>
+        <li> <img src="australia/Melbourne/1.jpg"></li>
+    </ul>
+    <a id="next" href="#">&#8811;</a>
+    <a id="prev" href="#">&#8810;</a>
+    <script>var responsiveSlider = function() {
+
+        var slider = document.getElementById("slider");
+        var sliderWidth = slider.offsetWidth;
+        var slideList = document.getElementById("slideWrap");
+        var count = 1;
+        var items = slideList.querySelectorAll("li").length;
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        
+        window.addEventListener('resize', function() {
+          sliderWidth = slider.offsetWidth;
+        });
+        
+        var prevSlide = function() {
+          if(count > 1) {
+            count = count - 2;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = 1) {
+            count = items - 1;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+        };
+        
+        var nextSlide = function() {
+          if(count < items) {
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = items) {
+            slideList.style.left = "0px";
+            count = 1;
+          }
+        };
+        
+        next.addEventListener("click", function() {
+          nextSlide();
+        });
+        
+        prev.addEventListener("click", function() {
+          prevSlide();
+        });
+        
+        setInterval(function() {
+          nextSlide()
+        }, 8000);
+        
+        };
+        
+        window.onload = function() {
+        responsiveSlider();  
+        }</script>
+</div>
+<!--==================== Descriptions ====================-->
+ <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Description</h1>
+                    <div class="container">
+                    <img src="australia/Melbourne/caption (2).jpg" alt="Melbourne" >
+                    <p><br>La ville colorée et pleine de vie de Melbourne a de quoi plaire à tous les types de voyageurs, entre ses cafés confortables, son art local, l'histoire australienne et aborigène jusqu'aux divers sports auxquels assister. Commencez votre journée avec un « flat white » (sorte de café latte à base d'espresso) avant d'emprunter gratuitement le City Circle Tram pour découvrir des attractions singulières comme les jardins botaniques royaux et la réserve de Healesville où vous attendent de nombreux animaux. Melbourne constitue en outre un excellent point de départ pour des excursions à la journée sur Great Ocean Road et Phillip Island.
+
+                        <br>  <br>
+                        <br>  <br>
+                        <br> <br>
+                    </p>
+                  
+            </section>
+<!--==================== Les immanquables ====================-->
+<section class="best-sales-container" id="best-sales">
+    <h1 class="section-title">Les immanquables</h1>
+
+</section>
+
+<section class="packages" id="packages">
+<div class="box-container">
+
+<div class="box">
+<img src="australia/Melbourne/jardins.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building "></i>Royal Botanic Gardens Melbourne</h3>
+   <p>
+    Jardins</p>
+    <a href="https://www.rbg.vic.gov.au/melbourne-gardens/" class="btn">VOIR PLUS</a>
+
+</div>
+</div>
+<div class="box">
+<img src="australia/Melbourne/gallery.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i>National Gallery of Victoria</h3>
+   <p> 
+    Musées d'art</p>
+    <a href="https://www.ngv.vic.gov.au/" class="btn">VOIR PLUS</a>
+
+</div>
+</div>
+
+<div class="box">
+<img src="australia/Melbourne/zoo.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i>Melbourne Zoo </h3>
+   <p>
+    Zoos • Jardins</p>
+    <a href="https://www.zoo.org.au/" class="btn">VOIR PLUS</a>
+</div>
+</div>
+
+<div class="box">
+<img src="australia/Melbourne/weel.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i>Melbourne Star Observation Wheel</h3>
+   <p>
+    Monuments & Points d'intérêt • Tours et plateformes d'observation</p>
+   <a href="https://melbournestar.com/" class="btn">VOIR PLUS</a>
+
+</div>
+</div>
+</div>
+</section>
+<!--==================== RESTAURANTS ====================-->
+<section class="best-sales-container" id="best-sales">
+    <h1 class="section-title">Restaurants</h1>
+
+</section>
+
+<section class="packages" id="packages">
+<div class="box-container">
+
+<div class="box">
+<img src="australia/Melbourne/food1.jpg" alt="">
+<div class="content">
+   <h3> Quay Restaurant
+
+
+</h3>
+   <p>Upper Level, Overseas Passenger Terminal, Circular Quay West, The Rocks, Sydney, Nouvelle-Galles du Sud 2000 Australie</p>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
+    <div class="price">+61 2 9251 56006</div>
+    <a href="https://www.quay.com.au/" class="btn">VOIR PLUS</a>
+    </div>
+    </div>
+    <div class="box">
+        <img src="australia/Melbourne/food2.jpg" alt="">
+        <div class="content">
+            <h3> Automata
+            </h3>
+            <p>5 Kensington Street, Sydney, Nouvelle-Galles du Sud 2008 Australie</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price">+61 2 8277 8555</div>
+            <div><br>
+                <br></div>
+            <a href="https://www.automata.com.au/" class="btn">VOIR PLUS</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="australia/Melbourne/food3.jpg" alt="">
+        <div class="content">
+            <h3> Ester Restaurant
+            </h3>
+            <p>46 -52 Meagher St Chippendale, Sydney, Nouvelle-Galles du Sud 2008 Australie</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price"> +61 2 8068 8279</div>
+            <div><br>
+                <br></div>
+            <a href="https://www.ester-restaurant.com.au/" class="btn">VOIR PLUS</a>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+</section>
+ <!--==================== Hotels ====================-->
+            <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Meilleures Hotels</h1>
+   
+            </section>
+            
+        <section class="packages" id="packages">
+    <div class="box-container">
+
+        <div class="box">
+            <img src="australia/Melbourne/h1.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Crown Towers Melbourne</h3>
+                <p>8 Whiteman St, Melbourne, Victoria 3006 Australie
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> A partir de 705 TND</div>
+                <div><br>
+                <br></div>
+                <a href="https://reservations.crownhotels.com.au/3512?languageid=11&HotelID=3512&currency=&adults=2&childage=&rooms=1&datein=05/26/2022&dateout=05/27/2022&refid=6f2736e8-31a4-4e83-8bb0-7d4ac9af5155&utm_source=tripadvisor&utm_medium=tripadvisorBA&utm_campaign=CTMwebsite#/accommodation/room" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+        <div class="box">
+            <img src="australia/Melbourne/h2.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Sheraton Melbourne Hotel </h3>
+                <p>27 Little Collins St, Melbourne, Victoria 3000 Australie
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 695 TND </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.marriott.fr/reservation/rateListMenu.mi?dclid=CjkKEQiAwqCOBhCznrrEtsbw07gBEiQAr97T_3AHXo5_1XZ7FtCANgtqKqYhcELqCzsQKML8tt5bogTw_wcB&defaultTab=standard" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="australia/Melbourne/h4.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Mövenpick Hotel Melbourne On Spencer
+                </h3>
+                <p>160 Spencer St, Melbourne, Victoria 3000 Australie
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> A partir de   664 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://all.accor.com/hotel/B6L9/index.en.shtml" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="australia/Melbourne/h3.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Adina Apartment Hotel Melbourne Southbank</h3>
+                <p>99 City Road Southbank, Melbourne, Victoria 3006 Australie</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de  324 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.adinahotels.com/en/apartments/melbourne-southbank/?utm_source=tripadvisor_ba&utm_medium=affiliate&utm_campaign=busadv_hotellink&utm_content=adina-melbourne-southbank" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="australia/Melbourne/h5.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Quincy Hotel Melbourne</h3>
+                <p>509 Flinders Lane, Melbourne, Victoria 3000 Australie
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">A partir de 495 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://quincymelbourne.com/?utm_source=tripadvisor_ba&utm_medium=affiliate&utm_campaign=busadv_hotellink&utm_content=quincy-hotel-melbourne" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="australia/Melbourne/h6.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Melbourne Marriott Hotel</h3>
+                <p>Corner Exhibition & Lonsdale Streets, Melbourne, Victoria 3000 Australie</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 641 TND </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.marriott.fr/reservation/rateListMenu.mi?dclid=CjkKEQiAwqCOBhCznrrEtsbw07gBEiQAr97T_122aCyG3VTWgPq1N3mKnkpgupFONw0hk2VL4GTqYlPw_wcB&defaultTab=standard" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+    </div>
+    </section>
+  <section id="contact">
+            <div class="wrapper">
+                <h3>Contactez-nous</h3>
+                <p>nous  savons que voyager est une aventure humaine mais également un engagement financier important pour vous. C'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos attentes pour vous aider dans la préparation de votre séjour, circuit ou voyage sur mesure.</p>
+                
+                <form>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="Votre nom">
+                    <label for="email">Email</label>
+                    <input type="text" id="name" placeholder="Votre email">
+                    <input type="submit" value="Ok" class="button-3">
+                    
+                </form>
+            </div>  
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>italie</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="destinatins1.css">
+</head>
+ <body>
+	  <header>
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                      <li><a href="">Acueill |</a></li>
+                      <li><a href="#description">Description |</a></li>
+                      <li><a href="#minutes">En minutes |</a></li>
+                      <li><a href="#places">Meilleures places |</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<div id="slider">
+	
+    <ul id="slideWrap">
+        <li><img src="italie/téléchargement.jpg"></li>
+        <li> <img src="italie/téléchargement (1).jpg"> </li>
+        <li> <img src="italie/manarola-cinque-terre-italie.1526632.w740.jpeg"></li>
+        <li> <img src="italie/lago-di-como_m.jpg.image.694.390.low.jpg"> </li>
+        <li><img src="italie/images.jpg"></li>
+        <li><img src="italie/images (1).jpg"></li>
+
+    </ul>
+    <a id="next" href="#">&#8811;</a>
+    <a id="prev" href="#">&#8810;</a>
+    <script>var responsiveSlider = function() {
+
+        var slider = document.getElementById("slider");
+        var sliderWidth = slider.offsetWidth;
+        var slideList = document.getElementById("slideWrap");
+        var count = 1;
+        var items = slideList.querySelectorAll("li").length;
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        
+        window.addEventListener('resize', function() {
+          sliderWidth = slider.offsetWidth;
+        });
+        
+        var prevSlide = function() {
+          if(count > 1) {
+            count = count - 2;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = 1) {
+            count = items - 1;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+        };
+        
+        var nextSlide = function() {
+          if(count < items) {
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = items) {
+            slideList.style.left = "0px";
+            count = 1;
+          }
+        };
+        
+        next.addEventListener("click", function() {
+          nextSlide();
+        });
+        
+        prev.addEventListener("click", function() {
+          prevSlide();
+        });
+        
+        setInterval(function() {
+          nextSlide()
+        }, 8000);
+        
+        };
+        
+        window.onload = function() {
+        responsiveSlider();  
+        }</script>
+</div>
+
+<!--==================== Descriptions ====================-->
+ <section class="best-sales-container" id="description">
+				 <h1 class="section-title">Description</h1>
+                    <div class="container">
+                    <img src="italie/47341926-37492625.jpg" alt="italie" >
+                    <p><br><br>Italie :<br>
+                        Des crêtes argentées des Alpes à l'étincelante mer Méditerranée, la beauté de l'Italie est inégalée. Lors d'une visite, vous pourrez par exemple vous émerveiller devant le Colysée après avoir dégusté un plat de pâtes, ou dériver tranquillement le long d'un canal tout en sirotant un sangiovese. Explorez les vignobles et oliveraies de Toscane, ou faites du lèche-vitrines à Milan, capitale de la mode. Guettez les sirènes depuis les falaises de Sorrento ou goûtez aux fameux fromages et prosciutto de Parme. Quelle que soit votre destination, le pays vous envoûtera.  <br>
+                        <br>  <br>
+                        <br>  <br>
+                        <br>  <br>
+                        <br>
+                    </p>
+                    </div>
+                    
+</div>
+            </section>
+            <!--================description===================-->
+<section class="best-sales-container" id="minutes">
+  <h1 class="section-title">En minutes</h1>
+
+</section>
+<div class="video-container">
+  <video src="italie/Experience Venice Spectacular Beauty in Under 4 Minutes _ Short Film Showcase.mp4" id="video-slider" loop autoplay muted style="width: 1200px;height: 600px; "></video>
+</div>
+<!--================places a visiter===================-->
+<section class="best-sales-container" id="places">
+    <h1 class="section-title">Meilleurs places</h1>
+
+</section>
+
+            
+        <section class="packages" id="packages">
+    <div class="box-container">
+
+        <div class="box">
+            <img src="italie/1.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>  Rome  </h3>
+                <p>Avec ses sites antiques et son style moderne, la Ville éternelle continue de briller</p>
+           
+                <a href="rome.html" class="btn">voir plus</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="italie/2.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Venise </h3>
+                <p>Une cité intemporelle qui compte plus de 100 îles entourées d'une vaste lagune</p>
+                
+                <a href="venise.html" class="btn">voir plus</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="italie/3.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>  Milan </h3>
+                <p>Mode, design et gastronomie règnent en maîtres dans cette ville italienne qui gagne à être connue</p>
+             
+                <a href="milan.html" class="btn">voir plus</a>
+            </div>
+        </div>
+
+       
+
+    </div>
+    </section>
+    
+  <section id="contact">
+            <div class="wrapper">
+                <h3>Contactez-nous</h3>
+                <p>nous  savons que voyager est une aventure humaine mais également un engagement financier important pour vous. C'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos attentes pour vous aider dans la préparation de votre séjour, circuit ou voyage sur mesure.</p>
+                
+                <form>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="Votre nom">
+                    <label for="email">Email</label>
+                    <input type="text" id="name" placeholder="Votre email">
+                    <input type="submit" value="Ok" class="button-3">
+                    
+                </form>
+            </div>  
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Surfers Paradise</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="destinatins1.css">
+</head>
+ <body>
+	  <header>
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="">Acueill |</a></li>
+                        <li><a href="#steps">Description |</a></li>
+                        <li><a href="#best-sales-container">Meilleures Hotels |</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<div id="slider">
+	
+    <ul id="slideWrap">
+        <li> <img src="australia/Surfers Paradise/1090166-largejpg.jpg"> </li>
+        <li><img src="australia/Surfers Paradise/20180604-110050-largejpg.jpg"></li>
+        <li> <img src="australia/Surfers Paradise/aerial-view-of-broadbeach.jpg"></li>
+        <li> <img src="australia/Surfers Paradise/photo4jpg (1).jpg"></li>
+        <li> <img src="australia/Surfers Paradise/photo4jpg.jpg"></li>
+    </ul>
+    <a id="next" href="#">&#8811;</a>
+    <a id="prev" href="#">&#8810;</a>
+    <script>var responsiveSlider = function() {
+
+        var slider = document.getElementById("slider");
+        var sliderWidth = slider.offsetWidth;
+        var slideList = document.getElementById("slideWrap");
+        var count = 1;
+        var items = slideList.querySelectorAll("li").length;
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        
+        window.addEventListener('resize', function() {
+          sliderWidth = slider.offsetWidth;
+        });
+        
+        var prevSlide = function() {
+          if(count > 1) {
+            count = count - 2;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = 1) {
+            count = items - 1;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+        };
+        
+        var nextSlide = function() {
+          if(count < items) {
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = items) {
+            slideList.style.left = "0px";
+            count = 1;
+          }
+        };
+        
+        next.addEventListener("click", function() {
+          nextSlide();
+        });
+        
+        prev.addEventListener("click", function() {
+          prevSlide();
+        });
+        
+        setInterval(function() {
+          nextSlide()
+        }, 8000);
+        
+        };
+        
+        window.onload = function() {
+        responsiveSlider();  
+        }</script>
+</div>
+<!--==================== Descriptions ====================-->
+ <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Description</h1>
+                    <div class="container">
+                    <img src="australia/Surfers Paradise/Surfers Paradise.jpg" alt="Surfers Paradise" >
+                    <p><br>Surfers Paradise :<br>
+                        La bien nommée Surfers Paradise est le parfait spot pour ceux qui souhaitent rendre hommage aux dieux de la mer en tentant de fusionner avec les vagues. La plage est une bande dorée de sable fin, le cadre idéal pour une journée passée à chasser les vagues, tenter d'attraper un frisbee ou juste faire bronzette. Rechargez vos batteries dans l'un des 150 restaurants et cafés de Surfers Paradise ou allez reposer vos muscles fatigués par le surf et le soleil dans l'un des magnifiques spas de jour de Northside.
+
+                        <br>  <br>
+                        <br>  <br>
+                        <br> <br>
+                    </p>
+                  
+            </section>
+<!--==================== Les immanquables ====================-->
+<section class="best-sales-container" id="best-sales">
+    <h1 class="section-title">Les immanquables</h1>
+
+</section>
+
+<section class="packages" id="packages">
+<div class="box-container">
+
+<div class="box">
+<img src="australia/Surfers Paradise/1.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building "></i>Surfers Paradise Beach
+   </h3>
+   <p> Plages</p>
+
+</div>
+</div>
+<div class="box">
+<img src="australia/Surfers Paradise/2.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i>SkyPoint Climb</h3>
+   <p> 
+    Tours et plateformes d'observation
+</p>
+
+
+</div>
+</div>
+
+<div class="box">
+<img src="australia/Surfers Paradise/3.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i>Sling Shot & Vomatron Amusement Rides Gold Coast </h3>
+   <p>Parcs d'attractions & Parcs à thème</p>
+    <a href="https://www.slingshotgoldcoast.com.au/" class="btn">VOIR PLUS</a>
+</div>
+</div>
+</div>
+</section>
+<!--==================== RESTAURANTS ====================-->
+<section class="best-sales-container" id="best-sales">
+    <h1 class="section-title">Restaurants</h1>
+
+</section>
+
+<section class="packages" id="packages">
+<div class="box-container">
+
+<div class="box">
+<img src="australia/Surfers Paradise/food1.jpg" alt="">
+<div class="content">
+   <h3>Citrique Restaurant</h3>
+   <p>158 Ferny Ave JW Marriott Gold Coast Resort & Spa, Surfers Paradise, Côte Dorée, Queensland 4217 Australie</p>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
+    <div class="price">+61 7 5592 9800</div>
+    <a href="https://www.citriquerestaurant.com/" class="btn">VOIR PLUS</a>
+    </div>
+    </div>
+    <div class="box">
+        <img src="australia/Surfers Paradise/food2.jpg "alt="">
+        <div class="content">
+            <h3> Shiraz Persian Restaurant & Bar</h3>
+            <p>2893 Gold Coast Hwy, Surfers Paradise, Côte Dorée, Queensland 4217 Australie</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price">+61 7 5679 3941</div>
+            <div><br>
+                <br></div>
+            <a href="https://shirazgoldcoast.com/" class="btn">VOIR PLUS</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="australia/Surfers Paradise/food3.jpg" alt="">
+        <div class="content">
+            <h3> Betty's Burgers     </h3>
+            <p>3240 Surfers Paradise Bvd 12-14 Chevron Renaissance Shopping Centre, Surfers Paradise, Côte Dorée, Queensland 4217 Australie</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price"> +61 7 5538 6565</div>
+            <div><br>
+                <br></div>
+            <a href="https://www.bettysburgers.com.au/" class="btn">VOIR PLUS</a>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+</section>
+ <!--==================== Hotels ====================-->
+            <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Meilleures Hotels</h1>
+   
+            </section>
+            
+        <section class="packages" id="packages">
+    <div class="box-container">
+
+        <div class="box">
+            <img src="australia/Surfers Paradise/h1.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Oaks Gold Coast Hotel</h3>
+                <p>2801 Gold Coast Hwy, Surfers Paradise, Côte Dorée, Queensland 4217 Australie</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> A partir de 318 TND</div>
+                <div><br>
+                <br></div>
+                <a href="https://be.synxis.com/?Lang=1&adult=2&arrive=2022-05-26&brand=OAKS&chain=18336&child=0&config=OAKSGHA&configcode=OAKSGHA&currency=AUD&depart=2022-05-27&hotel=9148&level=hotel&locale=en-US&rooms=1&start=availresults&theme=OAKS&themecode=OAKS&utm_campaign=TAGoldCoastHW&utm_medium=TripAdvisorBA&utm_source=ba" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+        <div class="box">
+            <img src="australia/Surfers Paradise/h2.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>QT Gold Coast</h3>
+                <p>7 Staghorn Avenue, Surfers Paradise, Côte Dorée, Queensland 4217 Australie
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 714 TND </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.qthotels.com/rates/#/gold-coast" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="australia/Surfers Paradise/h3.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>JW Marriott Gold Coast Resort & Spa
+                </h3>
+                <p>158 Ferny Avenue, Surfers Paradise, Côte Dorée, Queensland 4217 Australie
+
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> A partir de   867 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.marriott.fr/reservation/rateListMenu.mi?dclid=CjkKEQiAwqCOBhCznrrEtsbw07gBEiQAr97T_xpaju7TE32ixcDKIDQzhNh8yaI0nrjiXM_OTsTJglDw_wcB&defaultTab=prepay" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="australia/Surfers Paradise/h4.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Viscount on the Beach</h3>
+                <p>Viscount Tower 1-3 First Ave, Surfers Paradise, Côte Dorée, Queensland 4217 Australie</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de  324 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.viscountonthebeach.com.au/" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="australia/Surfers Paradise/h5.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Marriott Vacation Club At Surfers Paradise</h3>
+                <p>158 Ferny Avenue, Surfers Paradise, Côte Dorée, Queensland 4217 Australie
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">A partir de 882 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.marriott.fr/reservation/rateListMenu.mi?dclid=CjkKEQiAwqCOBhCznrrEtsbw07gBEiQAr97T_9JuDdsVNXEGfzA-nCAJrWgPq1h-HJhciyE_UBgkTAnw_wcB&defaultTab=standard" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="australia/Surfers Paradise/h6.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Vibe Hotel Gold Coast</h3>
+                <p>Chevron Hotel 42 Ferny Ave, Surfers Paradise, Côte Dorée, Queensland 4217 Australie</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 353 TND </div>
+                <div><br>
+                    <br></div>
+                <a href="https://vibehotels.com/book-accommodation/gold-coast/hotel-gold-coast/?utm_source=tripadvisor_ba&utm_medium=affiliate&utm_campaign=busadv_hotellink&utm_content=vibe-gold-coast" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+    </div>
+    </section>
+  <section id="contact">
+            <div class="wrapper">
+                <h3>Contactez-nous</h3>
+                <p>nous  savons que voyager est une aventure humaine mais également un engagement financier important pour vous. C'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos attentes pour vous aider dans la préparation de votre séjour, circuit ou voyage sur mesure.</p>
+                
+                <form>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="Votre nom">
+                    <label for="email">Email</label>
+                    <input type="text" id="name" placeholder="Votre email">
+                    <input type="submit" value="Ok" class="button-3">
+                    
+                </form>
+            </div>  
+  </section>
+
+</body>
+
+</html>
+

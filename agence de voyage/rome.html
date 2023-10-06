@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rome</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="destinatins1.css">
+</head>
+ <body>
+	  <header>
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="">Acueill |</a></li>
+                        <li><a href="#steps">Description |</a></li>
+                        <li><a href="#best-sales-container">Meilleures Hotels |</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<div id="slider">
+	
+    <ul id="slideWrap">
+        <li> <img src="italie/rome/caption.jpg"></li>
+        <li> <img src="italie/rome/castel-sant-angelo.jpg"> </li>
+        <li><img src="italie/rome/coloseum.jpg"></li>
+        <li> <img src="italie/rome/provided-by-palazzo-doria.jpg"></li>
+        <li> <img src="italie/rome/trevi.jpg"></li>
+        <li><img src="italie/rome/fountain-at-the-bottom.jpg"></li>
+    </ul>
+    <a id="next" href="#">&#8811;</a>
+    <a id="prev" href="#">&#8810;</a>
+    <script>var responsiveSlider = function() {
+
+        var slider = document.getElementById("slider");
+        var sliderWidth = slider.offsetWidth;
+        var slideList = document.getElementById("slideWrap");
+        var count = 1;
+        var items = slideList.querySelectorAll("li").length;
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        
+        window.addEventListener('resize', function() {
+          sliderWidth = slider.offsetWidth;
+        });
+        
+        var prevSlide = function() {
+          if(count > 1) {
+            count = count - 2;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = 1) {
+            count = items - 1;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+        };
+        
+        var nextSlide = function() {
+          if(count < items) {
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = items) {
+            slideList.style.left = "0px";
+            count = 1;
+          }
+        };
+        
+        next.addEventListener("click", function() {
+          nextSlide();
+        });
+        
+        prev.addEventListener("click", function() {
+          prevSlide();
+        });
+        
+        setInterval(function() {
+          nextSlide()
+        }, 8000);
+        
+        };
+        
+        window.onload = function() {
+        responsiveSlider();  
+        }</script>
+</div>
+<!--==================== Descriptions ====================-->
+ <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Description</h1>
+                    <div class="container">
+                    <img src="italie/rome/caption (1).jpg" alt="rome" >
+                    <p><br> <br> <br> <br> <br>La tentaculaire ville de Rome reste l’une des destinations les plus prisées au monde, grâce à son mélange harmonieux de merveilles antiques et de délices modernes. Vous pouvez visiter les ruines du Colisée, les fontaines emblématiques de la ville, et vous promener dans les rues pavées avec un gelato à la main : Bien d’autres surprises vous y attendent. Rome est une ville sinueuse et spectaculaire, pleine de lieux à découvrir.
+                        <br>  <br>
+                        <br>  <br>
+                        <br> <br>
+                    </p>
+                  
+            </section>
+<!--==================== Les immanquables ====================-->
+<section class="best-sales-container" id="best-sales">
+    <h1 class="section-title">Les immanquables</h1>
+
+</section>
+
+<section class="packages" id="packages">
+<div class="box-container">
+
+<div class="box">
+<img src="italie/rome/1.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building "></i> Colisée</h3>
+   <p>
+    Sites historiques • Ruines anciennes</p>
+    <div class="price"> Billets d'entrée  à partir de €5.25</div>
+</div>
+</div>
+<div class="box">
+<img src="italie/rome/2.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i>Galleria Nazionale d’Arte Moderna E Contemporanea </h3>
+   <p>Musées d'art</p>
+
+</div>
+</div>
+
+<div class="box">
+<img src="italie/rome/3.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i> Fontaine de Trevi </h3>
+   <p>
+    Monuments & Points d'intérêt • Fontaines</p>
+
+</div>
+</div>
+
+<div class="box">
+<img src="italie/rome/4.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i> Villa Doria Pamphilj </h3>
+   <p>Bâtiments architecturaux • Parcs • Jardins</p>
+
+</div>
+</div>
+
+<div class="box">
+<img src="italie/rome/5.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i> Musées du Vatican</h3>
+   <p>Sites religieux • Musées d'art</p>
+   <div class="price"> Billets d'entrée  à partir de €7.00</div>
+
+   
+</div>
+</div>
+
+
+
+</div>
+</section>
+<!--==================== RESTAURANTS ====================-->
+<section class="best-sales-container" id="best-sales">
+    <h1 class="section-title">Restaurants</h1>
+
+</section>
+
+<section class="packages" id="packages">
+<div class="box-container">
+
+<div class="box">
+<img src="italie/rome/food1.jpg" alt="">
+<div class="content">
+   <h3>  Antico Arco
+   </h3>
+   <p>Piazzale Aurelio 7 Gianicolo, 00152 Rome Italie<br>
+    Ouvert: 12:00 L'après-midi - 12:00 Le matin</p>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+    </div>
+    <div class="price">+39 06 581 5274</div>
+    <a href="https://www.anticoarco.it/" class="btn">VOIR PLUS</a>
+    </div>
+    </div>
+    <div class="box">
+        <img src="italie/rome/food2.jpg" alt="">
+        <div class="content">
+            <h3> 
+                Roscioli </h3>
+            <p>Via Dei Giubbonari 21, 00186 Rome Italie</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price">+39 06 687 5287</div>
+            <div><br>
+                <br></div>
+            <a href="https://www.salumeriaroscioli.com/" class="btn">VOIR PLUS</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="italie/rome/food3.jpg" alt="">
+        <div class="content">
+            <h3>  Pizzarium Bonci</h3>
+            <p>Via della Meloria 43, 00136 Rome Italie</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price"> +39 06 3974 5416  </div>
+            <div><br>
+                <br></div>
+            <a href="https://www.bonci.it/" class="btn">VOIR PLUS</a>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+</section>
+ <!--==================== Hotels ====================-->
+            <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Meilleures Hotels</h1>
+   
+            </section>
+            
+        <section class="packages" id="packages">
+    <div class="box-container">
+
+        <div class="box">
+            <img src="italie/rome/h1.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Hotel Eden  </h3>
+                <p>Via Ludovisi 49, 00187 Rome Italie</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> A partir de 3144 TND</div>
+                <div><br>
+                <br></div>
+                <a href="https://fr.lartisien.com/hotel/hotel-eden-rome" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="italie/rome/H2.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Portrait Roma </h3>
+                <p>Via Bocca di Leone, 23, 00187 Rome Italie</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">A partir de  2 030 TND </div>
+                <div><br>
+                    <br></div>
+                <a href="https://fr.lhw.com/hotel/portrait-roma-rome-italy" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="italie/rome/h3.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> 
+                    The Fifteen Keys Hotel</h3>
+                <p>Via Urbana 6/7, 00184 Rome Italie</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> A partir de 968 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.fifteenkeys.com/" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="italie/rome/H4.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Hotel Artemide </h3>
+                <p>Via Nazionale 22, 00184 Rome Italie</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">A partir de 1 125 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.hotelartemide.it/en/?utm_source=TripAdvisor&utm_medium=Link&utm_campaign=TripAdvisorBusinessListing&utm_content=WebsiteLink" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="italie/rome/h5.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> QuodLibet</h3>
+                <p>Via Barletta 29, 00192 Rome Italie</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">A partir de 718 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://quodlibetroma.com/?utm_source=TripAdvisor&utm_medium=Profilo" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="italie/rome/H6.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>  Hotel Golden</h3>
+                <p>Via Marche 84 next to the old Roman Walls, the Borghese Gardens, Spanish Steps and Trevi Fountain, 00187 Rome Italie. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 279 TND </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.hotelgoldenrome.com/?utm_source=Tripadvisor&utm_medium=link&utm_campaign=Profilo_Aziendale_Tripadvisor" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+    </div>
+    </section>
+  <section id="contact">
+            <div class="wrapper">
+                <h3>Contactez-nous</h3>
+                <p>nous  savons que voyager est une aventure humaine mais également un engagement financier important pour vous. C'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos attentes pour vous aider dans la préparation de votre séjour, circuit ou voyage sur mesure.</p>
+                
+                <form>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="Votre nom">
+                    <label for="email">Email</label>
+                    <input type="text" id="name" placeholder="Votre email">
+                    <input type="submit" value="Ok" class="button-3">
+                    
+                </form>
+            </div>  
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Shanghai</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="destinatins1.css">
+</head>
+ <body>
+	  <header>
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="">Acueill |</a></li>
+                        <li><a href="#steps">Description |</a></li>
+                        <li><a href="#best-sales-container">Meilleures Hotels |</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<div id="slider">
+	
+    <ul id="slideWrap">
+        <li> <img src="chine/shanghai/caption.jpg"></li>
+        <li> <img src="chine/shanghai/exteriror.jpg"> </li>
+        <li><img src="chine/shanghai/hotel-night-shot.jpg"></li>
+        <li> <img src="chine/shanghai/photo2jpg.jpg"></li>
+        <li> <img src="chine/shanghai/photo5jpg.jpg"></li>
+        <li> <img src="chine/shanghai/shanghai-disneyland.jpg"></li>
+    </ul>
+    <a id="next" href="#">&#8811;</a>
+    <a id="prev" href="#">&#8810;</a>
+    <script>var responsiveSlider = function() {
+
+        var slider = document.getElementById("slider");
+        var sliderWidth = slider.offsetWidth;
+        var slideList = document.getElementById("slideWrap");
+        var count = 1;
+        var items = slideList.querySelectorAll("li").length;
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        
+        window.addEventListener('resize', function() {
+          sliderWidth = slider.offsetWidth;
+        });
+        
+        var prevSlide = function() {
+          if(count > 1) {
+            count = count - 2;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = 1) {
+            count = items - 1;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+        };
+        
+        var nextSlide = function() {
+          if(count < items) {
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = items) {
+            slideList.style.left = "0px";
+            count = 1;
+          }
+        };
+        
+        next.addEventListener("click", function() {
+          nextSlide();
+        });
+        
+        prev.addEventListener("click", function() {
+          prevSlide();
+        });
+        
+        setInterval(function() {
+          nextSlide()
+        }, 8000);
+        
+        };
+        
+        window.onload = function() {
+        responsiveSlider();  
+        }</script>
+</div>
+<!--==================== Descriptions ====================-->
+ <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Description</h1>
+                    <div class="container">
+                    <img src="chine/Shanghai.jpg" alt="Canton" >
+                    <p><br>Shanghai est un terrain de jeux luxueux pour une population aisée qui aime à profiter de ses restaurants étoilés, ses maisons de haute couture et son hôtellerie haut de gamme. La rivière Huangpu divise la ville en deux quartiers : Pudong et Puxi. Avec ses gratte-ciel, Pudong semble sortir tout droit du dessin animé Les Jetson. Quant à Puxi, c'est un quartier qui invite à se balader le long de la rivière, dans le Bund et à la découverte du vieux Shanghai. La scène gastronomique y est exceptionnelle. Pour en profiter pleinement, de nombreux circuits proposent d'aller déguster des spécialités, comme les « dumplings » ou raviolis chinois, dans des restaurants locaux. Enfin, ne passez pas à côté de l'opportunité de vous faire confectionner des tenues sur mesure dans des boutiques spécialisées.
+
+                        <br>  <br>
+                        <br>  <br>
+                        <br> <br>
+                    </p>
+                  
+            </section>
+<!--==================== Les immanquables ====================-->
+<section class="best-sales-container" id="best-sales">
+    <h1 class="section-title">Les immanquables</h1>
+
+</section>
+
+<section class="packages" id="packages">
+<div class="box-container">
+
+<div class="box">
+<img src="chine/shanghai/1.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building "></i> Shanghai Jewish Refugees Museum</h3>
+   <p>
+    Musées spécialisés</p>
+    <a href="http://www.shhkjrm.com/" class="btn">VOIR PLUS</a>
+    
+
+</div>
+</div>
+<div class="box">
+<img src="chine/shanghai/2.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i>Musée de Shanghai</h3>
+   <p> Musées spécialisés</p>
+    <a href="https://www.shanghaimuseum.net/mu/frontend/pg/m/en/display/index" class="btn">VOIR PLUS</a>
+
+</div>
+</div>
+
+<div class="box">
+<img src="chine/shanghai/3.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i> Shanghai Tower </h3>
+   <p>Tours et plateformes d'observation</p>
+    <a href="https://www.shanghaitower.com/" class="btn">VOIR PLUS</a>
+</div>
+</div>
+
+<div class="box">
+<img src="chine/shanghai/4.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i> Yu Garden (Yuyuan)</h3>
+   <p>Jardins</p>
+   <a href="https://www.yugarden.com.cn/page/articleView/index.html" class="btn">VOIR PLUS</a>
+
+</div>
+</div>
+</div>
+</section>
+<!--==================== RESTAURANTS ====================-->
+<section class="best-sales-container" id="best-sales">
+    <h1 class="section-title">Restaurants</h1>
+
+</section>
+
+<section class="packages" id="packages">
+<div class="box-container">
+
+<div class="box">
+<img src="chine/shanghai/food1.jpg" alt="">
+<div class="content">
+   <h3>Din Tai Fung (Nanjing West Road)</h3>
+   <p>JingAn Distinguish NanJing West Road 1376 , ShangHai ShangCheng 1 Floor a104 near Xikang Road, Shanghai Chine</p>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
+    <div class="price">+86 21 6289 9182</div>
+    <a href="https://www.foodiestrip.com/restaurant/din-tai-fung-nanjing-west-road-nan-jing-xi-lu-jingan-qu-shanghai-shi-china-0" class="btn">VOIR PLUS</a>
+    </div>
+    </div>
+    <div class="box">
+        <img src="chine/shanghai/food2.jpg" alt="">
+        <div class="content">
+            <h3> El Willy    </h3>
+            <p>5F, No.22 Zhongshan Dong Er Road, Huangpu District, Shanghai Chine</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price">+86 21 5404 5757</div>
+            <div><br>
+                <br></div>
+            <a href="https://elwilly.com/elwilly/" class="btn">VOIR PLUS</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="chine/shanghai/food3.jpg" alt="">
+        <div class="content">
+            <h3> Xibo
+            </h3>
+            <p>3F, 85 Changshu Lu, Shanghai Chine</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price"> +86 21 5403 8330</div>
+            <div><br>
+                <br></div>
+            <a href="https://www.facebook.com/xiboxinjiang/" class="btn">VOIR PLUS</a>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+</section>
+ <!--==================== Hotels ====================-->
+            <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Meilleures Hotels</h1>
+   
+            </section>
+            
+        <section class="packages" id="packages">
+    <div class="box-container">
+
+        <div class="box">
+            <img src="chine/shanghai/h1.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>
+                    JW Marriott Hotel Shanghai at Tomorrow Square</h3>
+                <p>No.399 Nanjing West Road, Huangpu District, Shanghai 200003 Chine</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> A partir de 644 TND</div>
+                <div><br>
+                <br></div>
+                <a href="https://www.marriott.fr/reservation/rateListMenu.mi?dclid=CjkKEQiAwqCOBhCznrrEtsbw07gBEiQAr97T_0HeE40hYKvh_EetijfG9JLRxyBwGOA13mVnq-YAb4Dw_wcB&defaultTab=standard" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+        <div class="box">
+            <img src="chine/shanghai/h2.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Courtyard Shanghai Xujiahui</h3>
+                <p>No.100 Hongqiao Road, Xuhui District, Shanghai 200030 Chine</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 387 TND </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.marriott.fr/reservation/rateListMenu.mi?dclid=CjkKEQiAwqCOBhCznrrEtsbw07gBEiQAr97T_7eQhc8VQSYM8zUbxowPqbpSoIXHR2m8i3DIaVcRyyrw_wcB&defaultTab=standard" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="chine/shanghai/h3.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Grand Kempinski Hotel Shanghai</h3>
+                <p>1288 Lujiazui Ring Road Pudong District, Shanghai 200120 Chine</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> A partir de   623 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.kempinski.com/en/shanghai/grand-kempinski-hotel-shanghai/?utm_medium=referral&utm_source=tripadvisor&utm_campaign=KISHA5&utm_content=business+listing&source=S20001547" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="chine/shanghai/h4.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Sheraton Shanghai Jiading Hotel </h3>
+                <p>No.66 Jiatang Road, Juyuan New Town,Jiading District, Shanghai 201800 Chine</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de  421 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.marriott.fr/reservation/rateListMenu.mi?dclid=CjkKEQiAwqCOBhCznrrEtsbw07gBEiQAr97T__DOzyAwzUKOrlfSh1gKF4HnSJmaJvNOjymzkwpKpd_w_wcB&defaultTab=standard" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="chine/shanghai/h5.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Aloft Shanghai Zhangjiang Haike</h3>
+                <p>No.550 Haike Road, Zhangjiang, Pudong New District, Shanghai 201210 Chine </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">A partir de 415 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.marriott.fr/reservation/rateListMenu.mi?dclid=CjkKEQiAwqCOBhCznrrEtsbw07gBEiQAr97T_9FzmQi7SH3E1hY78THnfM4kt-sMwaLwzfUZC_twrwTw_wcB&defaultTab=standard" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="chine/shanghai/h6.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>  Fairmont Peace Hotel</h3>
+                <p>20 Nanjing Road East, Shanghai 200002 Chine</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">A partir de 1427 TND </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.fairmont.com/peace-hotel-shanghai/?genid=tripadvisor_pce_bizlist&utm_source=tripadvisor&utm_medium=&utm_content=pce&utm_campaign=bizlist" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+    </div>
+    </section>
+  <section id="contact">
+            <div class="wrapper">
+                <h3>Contactez-nous</h3>
+                <p>nous  savons que voyager est une aventure humaine mais également un engagement financier important pour vous. C'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos attentes pour vous aider dans la préparation de votre séjour, circuit ou voyage sur mesure.</p>
+                
+                <form>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="Votre nom">
+                    <label for="email">Email</label>
+                    <input type="text" id="name" placeholder="Votre email">
+                    <input type="submit" value="Ok" class="button-3">
+                    
+                </form>
+            </div>  
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sidi Bou Saïd</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="destination.css">
+</head>
+ <body>
+	  <header>
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="">Acueill |</a></li>
+                        <li><a href="#steps">Description |</a></li>
+                        <li><a href="#best-sales-container">Meilleures Hotels |</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<div id="slider">
+	
+    <ul id="slideWrap">
+        <li><img src="sidi bou said/images.jpg" alt=""></li>
+        <li> <img src="sidi bou said/img_20140902042609.jpg"> </li>
+        <li> <img src="sidi bou said/Sidi-Bou-Saïd-Tunisie4.jpg"></li>
+        <li> <img src="sidi bou said/sidi_bou_said.jpg"> </li>
+        <li><img src="sidi bou said/voyage-sidi-bousaid03.jpg"></li>
+    </ul>
+    <a id="next" href="#">&#8811;</a>
+    <a id="prev" href="#">&#8810;</a>
+    <script>var responsiveSlider = function() {
+
+        var slider = document.getElementById("slider");
+        var sliderWidth = slider.offsetWidth;
+        var slideList = document.getElementById("slideWrap");
+        var count = 1;
+        var items = slideList.querySelectorAll("li").length;
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        
+        window.addEventListener('resize', function() {
+          sliderWidth = slider.offsetWidth;
+        });
+        
+        var prevSlide = function() {
+          if(count > 1) {
+            count = count - 2;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = 1) {
+            count = items - 1;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+        };
+        
+        var nextSlide = function() {
+          if(count < items) {
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = items) {
+            slideList.style.left = "0px";
+            count = 1;
+          }
+        };
+        
+        next.addEventListener("click", function() {
+          nextSlide();
+        });
+        
+        prev.addEventListener("click", function() {
+          prevSlide();
+        });
+        
+        setInterval(function() {
+          nextSlide()
+        }, 8000);
+        
+        };
+        
+        window.onload = function() {
+        responsiveSlider();  
+        }</script>
+</div>
+<!--==================== Descriptions ====================-->
+ <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Description</h1>
+                    <div class="container">
+                    <img src="sidi bou said/1.jpg" alt="sidi_bou_said" >
+        <p> Le village touristique de Sidi Bou Said se situe à une vingtaine de kilomètres, au nord-est de Tunis, la capitale de la Tunisie. Il est accessible sur la ligne de tramway Tunis, et du Carthage TGM. Le meilleur moment pour découvrir ce joli village coloré est au début d&#8217;automne ou de printemps . En effet, Sidi Bou Said attire toute une ruée de vacanciers durant la période estivaleLes touristes sont fascinés par son patrimoine historique et la beauté de ses paysages. Marcher seul dans les rues étroites, autour des maisons traditionnelles de couleur blanc-bleu est un excellent moyen d’explorer le village. Si vous la visitez pendant les mois d&#8217;été, passez du temps dans la rue touristique principale mais aussi dans les parties intérieures plus vides du quartier. En arpentant le sommet de la colline, vous profiterez d’une vue imprenable sur la baie qui le surplombe. Le village est assez petit et vous pouvez parcourir toutes ses rues en deux heures et demie. Mais malgré cela, Sidi Bou Said propose un certain nombre de choses à faire qui rendra votre visite aussi agréable qu’enrichissante<br>
+                     
+                        <br>  <br>
+                        <br>  <br>
+                        <br>  <br>
+                        <br>
+                    </p>
+                  <div class="container">
+                    <img src="sidi bou said/2.jpg" alt="musée familiale" >
+                    <p><strong>Que visiter ?</strong></p>
+                    <p>La Maison familiale musée Dar el-Annabi<br>
+                        Il s’agit d’une vieille maison qui s&#8217;est transformée en musée, montrant la vie traditionnelle d&#8217;un avocat tunisien du 18ème siècle. <br>
+                        <br>  <br><br>
+                        <br>  <br>
+                        <br>  <br>
+                        <br><br>
+                        <br>  <br>
+                        <br>  <br>
+                        <br>
+                        <br></p>
+                    <p></p>
+                  </div>
+                  <div class="container">
+                    <img src="sidi bou said/3.jpg" alt="marché traditionnel" >
+                    <p><strong>Que voir ?</strong></p>
+                    <p>Le marché traditionnel D’Art Lella Salha et Des Métiers<br>
+                        Ce marché extérieur offre tout ce dont vous avez besoin pour passer d’excellentes vacances mais aussi pour rapporter de précieux souvenirs. De l’artisanat, aux chefs d’œuvres des artistes locaux, en passant par les stands vestimentaires et les produits du terroir, ce marché traditionnel bien animée est un endroit incontournable pour connaitre la richesse des terres et de la tradition à Sidi Bou Said.  <br>
+                        <br>  <br>
+                        <br>  <br><br>
+                        <br>  <br>
+                        <br>  <br>
+                        <br>
+                        <br></p>
+                  </div>
+                  <div class="container">
+                    <img src="sidi bou said/4.jpg" alt="type de nouriture" >
+                    <p><strong>Ou manger  ?</strong></p>
+                    <p>Le restaurant Blanc Et Bleu <br>
+                        C’est un restaurant syrien juste en face du café Coste. Il est le seul qui ouvre ses portes à midi lors du Ramadan. Dans une maison typique de la ville aux couleurs bleus et blancs en harmonie avec les alentours, ce restaurant bistrot concocte des plats traditionnels mais aussi des plats qui vous feront voyager à travers le monde, notamment en France.</p>
+                    <p>&nbsp;</p><br>
+                        <br>  <br>
+                        <br>  <br>
+                        <br><br><br></p>
+                  </div>
+
+            </section>
+
+ <!--==================== Hotels ====================-->
+            <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Meilleures Hotels</h1>
+   
+            </section>
+            
+        <section class="packages" id="packages">
+    <div class="box-container">
+
+        <div class="box">
+            <img src="sidi bou said/h1.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> La Villa Bleue  </h3>
+                <p>68 rue Kennedy, Sidi Bou Said 2026, Tunisia</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> A partir de 404d  </div>
+                <div><br>
+                <br></div>
+                <a href="resrvation.html" class="btn">Reserver</a>
+            </div>
+        </div>
+   
+
+        <div class="box">
+            <img src="sidi bou said/h3.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Hotel Africa</h3>
+                <p>N 50 Av. Habib Bourguiba Bp73, Tunis 1001, Tunisia</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> A partir de 165d  </div>
+                <div><br>
+                    <br></div>
+                <a href="#" class="btn">reserver</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="sidi bou said/h4.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> El Mouradi Gammarth </h3>
+                <p>BP 597 Les Côtes de Carthage Gammarth, La Marsa, Tunis 2070, Tunisia.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">A partir de 220d </div>
+                <div><br>
+                    <br></div>
+                <a href="#" class="btn">Reserver</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="sidi bou said/h5.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Ibis Tunis </h3>
+                <p>Rue de Syrie, Tunis 1002, Tunisia.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 200d </div>
+                <div><br>
+                    <br></div>
+                <a href="#" class="btn">Reserver</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="sidi bou said/h2.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Hôtel Bou Fares  </h3>
+                <p>15 Rue Sidi Bou Fares, 2026 Sidi Bou Saïd, Tunisie.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de  215 d </div>
+                <div><br>
+                    <br></div>
+                <a href="resrvation.html" class="btn">Reserver</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="sidi bou said/h6.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Yadis Ibn Khaldoun </h3>
+                <p>30 Rue du Koweit, Tunis 1002, Tunisia. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 100d <span>120.00d</span> </div>
+                <div><br>
+                    <br></div>
+                <a href="#" class="btn">Reserver</a>
+            </div>
+        </div>
+
+    </div>
+    </section>
+  <section id="contact">
+            <div class="wrapper">
+                <h3>Contactez-nous</h3>
+                <p>nous  savons que voyager est une aventure humaine mais également un engagement financier important pour vous. C'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos attentes pour vous aider dans la préparation de votre séjour, circuit ou voyage sur mesure.</p>
+                
+                <form>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="Votre nom">
+                    <label for="email">Email</label>
+                    <input type="text" id="name" placeholder="Votre email">
+                    <input type="submit" value="Ok" class="button-3">
+                    
+                </form>
+            </div>  
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

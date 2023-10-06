@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Milan</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="destinatins1.css">
+</head>
+ <body>
+	  <header>
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="">Acueill |</a></li>
+                        <li><a href="#steps">Description |</a></li>
+                        <li><a href="#best-sales-container">Meilleures Hotels |</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<div id="slider">
+	
+    <ul id="slideWrap">
+        <li> <img src="italie/venise/bellissimo.jpg"></li>
+        <li> <img src="italie/venise/experience-erasmus-a-venise-italie-63309b8894e8353d7895959423fc6133.jpg"> </li>
+        <li><img src="italie/venise/iStock_46724816_XXXLARGE.jpg"></li>
+        <li> <img src="italie/venise/téléchargement (1).jpg"></li>
+        <li> <img src="italie/venise/téléchargement.jpg"></li>
+    </ul>
+    <a id="next" href="#">&#8811;</a>
+    <a id="prev" href="#">&#8810;</a>
+    <script>var responsiveSlider = function() {
+
+        var slider = document.getElementById("slider");
+        var sliderWidth = slider.offsetWidth;
+        var slideList = document.getElementById("slideWrap");
+        var count = 1;
+        var items = slideList.querySelectorAll("li").length;
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        
+        window.addEventListener('resize', function() {
+          sliderWidth = slider.offsetWidth;
+        });
+        
+        var prevSlide = function() {
+          if(count > 1) {
+            count = count - 2;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = 1) {
+            count = items - 1;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+        };
+        
+        var nextSlide = function() {
+          if(count < items) {
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = items) {
+            slideList.style.left = "0px";
+            count = 1;
+          }
+        };
+        
+        next.addEventListener("click", function() {
+          nextSlide();
+        });
+        
+        prev.addEventListener("click", function() {
+          prevSlide();
+        });
+        
+        setInterval(function() {
+          nextSlide()
+        }, 8000);
+        
+        };
+        
+        window.onload = function() {
+        responsiveSlider();  
+        }</script>
+</div>
+<!--==================== Descriptions ====================-->
+ <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Description</h1>
+                    <div class="container">
+                    <img src="italie/milan/milan.jpg" alt="milan" >
+                    <p><br>Une des capitales mondiales de la mode, Milan est souvent oubliée des touristes qui se dirigent en masse vers Rome, Florence et Venise. Pourtant, la ville est un véritable joyau qui a beaucoup à offrir : le célèbre Duomo di Milano (la plus grande cathédrale gothique du monde, et peut-être bien la plus saisissante), les mosaïques et les dômes de verre de la Galleria Vittorio Emanuelle II et d'impressionnants musées tels que le Pinacoteca di Brera. On y trouve également des restaurants branchés, des cafés magnifiques et de nombreuses terrasses où s'adonner à la tradition de longue date de l'aperitivo. Aucune visite ne saurait être complète sans une bonne séance de shopping, et les boutiques ne manquent pas. Le soir venu, allez assister à un opéra dans le cadre somptueux de La Scala.
+
+                        <br>  <br>
+                        <br>  <br>
+                        <br> <br>
+                    </p>
+                  
+            </section>
+<!--==================== Les immanquables ====================-->
+<section class="best-sales-container" id="best-sales">
+    <h1 class="section-title">Les immanquables</h1>
+
+</section>
+
+<section class="packages" id="packages">
+<div class="box-container">
+
+<div class="box">
+<img src="italie/milan/1.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building "></i> Dôme de Milan</h3>
+   <p>Sites religieux • Églises et cathédrales</p>
+    <div class="price"> Billets d'entrée à partir de  €15.58</div>
+    <a href="https://www.duomomilano.it/en/" class="btn">VOIR PLUS</a>
+
+</div>
+</div>
+<div class="box">
+<img src="italie/milan/2.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i>Galerie Victor Emmanuel II</h3>
+   <p>
+    Monuments & Points d'intérêt • Bâtiments architecturaux</p>
+    <a href="http://www.ingalleria.com/en" class="btn">VOIR PLUS</a>
+
+</div>
+</div>
+
+<div class="box">
+<img src="italie/milan/3.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i> Théâtre Alla Scala  </h3>
+   <p>
+    Théâtres</p>
+    <a href="https://www.teatroallascala.org/en/index.html" class="btn">VOIR PLUS</a>
+</div>
+</div>
+
+<div class="box">
+<img src="italie/milan/4.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i> Fondazione Prada</h3>
+   <p>Musées spécialisés • Bâtiments architecturaux • Musées d'art</p>
+   <a href="https://www.fondazioneprada.org/" class="btn">VOIR PLUS</a>
+
+</div>
+</div>
+
+
+
+
+
+</div>
+</section>
+<!--==================== RESTAURANTS ====================-->
+<section class="best-sales-container" id="best-sales">
+    <h1 class="section-title">Restaurants</h1>
+
+</section>
+
+<section class="packages" id="packages">
+<div class="box-container">
+
+<div class="box">
+<img src="italie/milan/food1.jpg" alt="">
+<div class="content">
+   <h3>  Ratanà</h3>
+   <p>Via Gaetano de Castillia 28, 20124 Milan Italie</p>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
+    <div class="price">+39 02 8712 8855</div>
+    <a href="https://www.ratana.it/" class="btn">VOIR PLUS</a>
+    </div>
+    </div>
+    <div class="box">
+        <img src="italie/milan/food2.jpg" alt="">
+        <div class="content">
+            <h3> Dry Milano - Solferino    </h3>
+            <p>Via Solferino 33, 20121 Milan Italie</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price">+39 02 6379 3414</div>
+            <div><br>
+                <br></div>
+            <a href="https://drymilano.it/" class="btn">VOIR PLUS</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="italie/milan/food3.jpg" alt="">
+        <div class="content">
+            <h3>  Piz    </h3>
+            <p>Via Torino 34, 20123 Milan Italie</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price"> +39 02 8645 3482 </div>
+            <div><br>
+                <br></div>
+            <a href="https://www.facebook.com/pizmilano/" class="btn">VOIR PLUS</a>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+</section>
+ <!--==================== Hotels ====================-->
+            <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Meilleures Hotels</h1>
+   
+            </section>
+            
+        <section class="packages" id="packages">
+    <div class="box-container">
+
+        <div class="box">
+            <img src="italie/milan/h1.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Hotel Principe Di Savoia </h3>
+                <p>Piazza della Repubblica 17, 20124 Milan Italie</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> A partir de 1 335 TND</div>
+                <div><br>
+                <br></div>
+                <a href="https://www.dorchestercollection.com/en/milan/hotel-principe-di-savoia/" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+        <div class="box">
+            <img src="italie/milan/h2.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Moscova Luxury B&B </h3>
+                <p>Via Della Moscova, 27/29/60, 20121 Milan Italie</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">A partir de 515 TND </div>
+                <div><br>
+                    <br></div>
+                <a href="https://moscovaluxury.com/en/" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="italie/milan/h3.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Gran Duca di York</h3>
+                <p>Via Moneta 1, 20123 Milan Italie</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> A partir de   710 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.ducadiyork.com/fr/homepage/index/1-0.html" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="italie/milan/h4.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Best Western Plus Hotel Galles </h3>
+                <p>Piazza Lima 2, 20124 Milan Italie</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de  706 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.galles.it/fr/" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="italie/milan/h5.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Lido Hotel</h3>
+                <p>Via Riccardo Galli 8, 20148 Milan Italie </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 369 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.lidohotelmilano.com/" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="italie/milan/h6.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>  Hotel Milano Castello</h3>
+                <p>Via San Tomaso 2, 20121 Milan Italie
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 2959 TND </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.hotelmilanocastello.com/" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+    </div>
+    </section>
+  <section id="contact">
+            <div class="wrapper">
+                <h3>Contactez-nous</h3>
+                <p>nous  savons que voyager est une aventure humaine mais également un engagement financier important pour vous. C'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos attentes pour vous aider dans la préparation de votre séjour, circuit ou voyage sur mesure.</p>
+                
+                <form>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="Votre nom">
+                    <label for="email">Email</label>
+                    <input type="text" id="name" placeholder="Votre email">
+                    <input type="submit" value="Ok" class="button-3">
+                    
+                </form>
+            </div>  
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

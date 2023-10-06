@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Monastir</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="destination.css">
+</head>
+ <body>
+	  <header>
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="">Acueill |</a></li>
+                        <li><a href="#steps">Description |</a></li>
+                        <li><a href="#best-sales-container">Meilleures Hotels |</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<div id="slider">
+	
+    <ul id="slideWrap">
+        <li><img src="monastir/ribat-de-monastir.jpg" alt=""></li>
+        <li> <img src="monastir/kouria.jpg"> </li>
+        <li> <img src="monastir/images.jpg"></li>
+        <li> <img src="monastir/marina.png"> </li>
+        <li><img src="monastir/monastir.jpg"></li>
+        <li><img src="monastir/téléchargement.jpg"></li>
+    </ul>
+    <a id="next" href="#">&#8811;</a>
+    <a id="prev" href="#">&#8810;</a>
+    <script>var responsiveSlider = function() {
+
+        var slider = document.getElementById("slider");
+        var sliderWidth = slider.offsetWidth;
+        var slideList = document.getElementById("slideWrap");
+        var count = 1;
+        var items = slideList.querySelectorAll("li").length;
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        
+        window.addEventListener('resize', function() {
+          sliderWidth = slider.offsetWidth;
+        });
+        
+        var prevSlide = function() {
+          if(count > 1) {
+            count = count - 2;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = 1) {
+            count = items - 1;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+        };
+        
+        var nextSlide = function() {
+          if(count < items) {
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = items) {
+            slideList.style.left = "0px";
+            count = 1;
+          }
+        };
+        
+        next.addEventListener("click", function() {
+          nextSlide();
+        });
+        
+        prev.addEventListener("click", function() {
+          prevSlide();
+        });
+        
+        setInterval(function() {
+          nextSlide()
+        }, 8000);
+        
+        };
+        
+        window.onload = function() {
+        responsiveSlider();  
+        }</script>
+</div>
+<!--==================== Descriptions ====================-->
+ <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Description</h1>
+                    <div class="container">
+                    <img src="monastir/ribat-de-monastir.jpg" alt="ribat" >
+                    <p><br><br><br><br>Avec ses plages de sable blond et sa mer de saphir, ses monuments médiévaux et sa charmante marina, Monastir offre un des visages les plus avenants de la Tunisie. Une destination idéale pour bronzer au bord de l’eau, mais aussi pour visiter une région passionnante : de Sousse à Kairouan, d’El Jem à Mahdia, vous voyagerez à travers l’histoire. Dans les campagnes, vous ferez connaissance avec la vie des villages bédouins. Et au long de la côte, les ports de pêche vous enchanteront.  <br>
+                        <br>  <br>
+                        <br>  <br>
+                        <br>  <br>
+                        <br>  <br>
+                        <br>  <br>
+                        <br>  <br>
+                        <br>
+                    </p>
+                  <div class="container">
+                    <img src="monastir/peche.jpg" alt="port de pêche" >
+                    <p><strong>Que voir ?</strong></p>
+                    <p>RIBAT ET PORT DE PÊCHE<br>
+                        Parcourez la splendide promenade du front de mer : la marina, l’esplanade du Ribat, le cimetière dominé par les fins minarets du mausolée de Bourguiba. Escaladez les 90 marches étroites de la tour-vigie du Ribat et vous aurez une vue panoramique à couper le souffle sur la ville et les plages environnantes. Admirez les vieilles pierres dorées des tours, des créneaux et de la mosquée voisine. Puis pénétrez dans les ruelles pavées de la médina. Fouinez dans les souks où les échoppes regorgent d’épices parfumées et de beaux objets d’artisanat : sacs en cuir, couvertures, paniers tressés… Faites un tour sur les quais animés du port de pêche. Ensuite, laissez-vous séduire par les environs de Monastir. La ville est entourée de villages agricoles et de vergers, tandis que la route de la côte suit un collier de criques et de plages pleines de charme.  <br>
+                        <br><br>
+                    <br>
+                <br>  <br>
+                <br> </p>
+                  </div>
+                  <div class="container">
+                    <img src="monastir/m.jpg" alt="plage" >
+                    <p><strong>Que faire ?</strong></p>
+                    <p>FARNIENTE OU PATRIMOINE<br>
+                        Avec ses plages, ses palmiers et sa mer couleur d’azur, Monastir est l'une des plus grandes destinations de vacances de Tunisie. Farniente ou catamaran, jetski ou spa, piste de karting … les loisirs ne manquent pas. C’est aussi une destination de golf : elle compte un parcours en bord de mer et un autre à flanc de colline. Le port de plaisance et le centre de plongée attendent les passionnés de la mer. Les amateurs d’histoire visiteront attentivement le beau musée d’art islamique du Ribat. Autour de Monastir, ils trouveront aussi le site archéologique de Lemta et de grandes villes d’histoire : Sousse, Mahdia et Kairouan. Sans oublier l’un des plus fabuleux monuments de Tunisie, le grand amphithéâtre romain d’El Jem. Et si vous aimez les arts traditionnels, vous serez éblouis par les tuniques de mariage brodées d’or et de soie exposées au musée des Arts et traditions populaires.  <br>
+                        <br>  <br>
+                        <br>  <br>
+                        <br>  <br>
+                        <br>  <br>
+                        <br></p>
+                  </div>
+                  <div class="container">
+                    <img src="monastir/poissons.jpg" alt="poissons" >
+                    <p><strong>Que manger  ?</strong></p>
+                    <p>POISSON ET FRUITS DE MER<br>
+                        Monastir offre une abondance de produits frais qu’elle accommode de diverses manières. Vous aurez peut-être la chance de goûter une spécialité locale, le couscous aux petits poissons charkaw : assaisonnés au sel et au piment. Ils sont cuits à la vapeur avec la semoule puis viennent garnir le plat avec poivrons et potirons. A Monastir, tous les produits de la pêche sont à l’honneur comme les loups et daurades grillés, les poulpes et calamars frits ou marinés… La région est connue pour ses cultures maraîchères : dégustez un ragoût printanier marqet khodhra, agneau mijoté aux fèves vertes et légumes de saison. Dans la médina, près des plages et sur les quais de la marina, vous trouverez une variété de restaurants pour répondre à toutes vos envies gourmandes.  <br>
+                        <br>  <br>
+                        <br>  <br>
+                        <br><br><br></p>
+                  </div>
+
+            </section>
+
+ <!--==================== Hotels ====================-->
+            <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Meilleures Hotels</h1>
+   
+            </section>
+            
+        <section class="packages" id="packages">
+    <div class="box-container">
+
+        <div class="box">
+            <img src="monastir/rayal thalassa.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Royal Thalassa Monastir  </h3>
+                <p>Situé sur une magnifique plage à quelques minutes de l’aéroport International de Monastir</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> A partir de 150.00d <span>200.00d</span> </div>
+                <div><br>
+                <br></div>
+                <a href="resrvation.html" class="btn">Reserver</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="monastir/kuriat palace.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Iberostar Selection Kuriat Palace </h3>
+                <p>Situé en bord de mer à Monastir et possède une réception ouverte 24h/24.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">A partir de  130.00d <span>190.00d</span> </div>
+                <div><br>
+                    <br></div>
+                <a href="resrvation.html" class="btn">Reserver</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="monastir/rosa beatch.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Rosa Beach Thalasso & Spa </h3>
+                <p>L'hôtel est situé à 15 km de Sousse, à 7 km du centre ville de Monastir et à quelques minutes de l’aéroport de Monastir. Le Golf Flamingo est à proximité ainsi que le stade de Mustapha ben Jannet.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> A partir de 90.00d <span>120.00d</span> </div>
+                <div><br>
+                    <br></div>
+                <a href="#" class="btn">reserver</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="monastir/bella.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Le Soleil Bella Vista </h3>
+                <p>Situé à une minute de l'aéroport Habib-Bourguiba et à 5 minutes du centre-ville de Monastir. La magnifique ville de Sousse et ses merveilleux sites historiques est presque 20 minutes de route.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 90.00d <span>120.00d</span> </div>
+                <div><br>
+                    <br></div>
+                <a href="#" class="btn">Reserver</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="monastir/golf.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Novostar Houda Golf Beach & Aquapark </h3>
+                <p>Le HOUDA Golf & Beach Club est situé entre Sousse et Monastir sur une plage méditerranéenne de sable fin et en face du terrain de Golf Palm Links de 18 trous.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 70.00d <span>90.00d</span> </div>
+                <div><br>
+                    <br></div>
+                <a href="#" class="btn">Reserver</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="monastir/palmier.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Les Palmiers </h3>
+                <p>
+                    Les Palmiers est situé directement sur la plage de Skanes, à 5 minutes en voiture du centre-ville de Monastir. </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 87.00d <span>100.00d</span> </div>
+                <div><br>
+                    <br></div>
+                <a href="#" class="btn">Reserver</a>
+            </div>
+        </div>
+
+    </div>
+    </section>
+  <section id="contact">
+            <div class="wrapper">
+                <h3>Contactez-nous</h3>
+                <p>nous  savons que voyager est une aventure humaine mais également un engagement financier important pour vous. C'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos attentes pour vous aider dans la préparation de votre séjour, circuit ou voyage sur mesure.</p>
+                
+                <form>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="Votre nom">
+                    <label for="email">Email</label>
+                    <input type="text" id="name" placeholder="Votre email">
+                    <input type="submit" value="Ok" class="button-3">
+                    
+                </form>
+            </div>  
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

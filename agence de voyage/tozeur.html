@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>tozeur</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="destination.css">
+</head>
+ <body>
+	  <header>
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="">Acueill |</a></li>
+                        <li><a href="#steps">Description |</a></li>
+                        <li><a href="#best-sales-container">Meilleures Hotels |</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<div id="slider">
+	
+    <ul id="slideWrap">
+        <li><img src="tozeur/154090929857_content.jpg" alt=""></li>
+        <li> <img src="tozeur/anantara_tozeur_resort_desert_adventures_944x510.jpg"> </li>
+        <li> <img src="tozeur/Festival-International-des-Oasis-Tunisie.jpg2_-808x500.jpg"></li>
+        <li> <img src="tozeur/images.jpg"> </li>
+        <li><img src="tozeur/tozeur-m.jpg"></li>
+        <li><img src="tozeur/Tunisie_Tozeur_palmeraie-1024x604.jpg"></li>
+
+    </ul>
+    <a id="next" href="#">&#8811;</a>
+    <a id="prev" href="#">&#8810;</a>
+    <script>var responsiveSlider = function() {
+
+        var slider = document.getElementById("slider");
+        var sliderWidth = slider.offsetWidth;
+        var slideList = document.getElementById("slideWrap");
+        var count = 1;
+        var items = slideList.querySelectorAll("li").length;
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        
+        window.addEventListener('resize', function() {
+          sliderWidth = slider.offsetWidth;
+        });
+        
+        var prevSlide = function() {
+          if(count > 1) {
+            count = count - 2;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = 1) {
+            count = items - 1;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+        };
+        
+        var nextSlide = function() {
+          if(count < items) {
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = items) {
+            slideList.style.left = "0px";
+            count = 1;
+          }
+        };
+        
+        next.addEventListener("click", function() {
+          nextSlide();
+        });
+        
+        prev.addEventListener("click", function() {
+          prevSlide();
+        });
+        
+        setInterval(function() {
+          nextSlide()
+        }, 8000);
+        
+        };
+        
+        window.onload = function() {
+        responsiveSlider();  
+        }</script>
+</div>
+<!--==================== Descriptions ====================-->
+ <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Description</h1>
+                    <div class="container">
+                    <img src="tozeur/h.jpg" alt="tozeur" >
+        <p> <br> <br> <br>Villes surgies du désert et blotties contre d’immenses palmeraies, Tozeur et Nefta surprennent, fascinent et plongent dans le dépaysement. La lumière brûlante du Sahara s’y déverse dans les ruelles des vieux quartiers, entre les hautes façades de briques blondes. A Tozeur, palaces, parcs à thème et musées ont fleuri autour de la vieille ville. A Nefta, d’innombrables coupoles signalent des tombeaux de saints, dominant l’oasis qui se love dans une cuvette appelée la Corbeille. Les dunes du Sahara ne sont qu’à quelques kilomètres.<br>
+                     
+                        <br>  <br>
+                        <br>  <br>
+                        <br>  <br>
+                        <br>
+                    </p>
+                  <div class="container">
+                    <img src="tozeur/h1.jpg" alt="" >
+                    <p><strong>Que faire ?</strong></p>
+                    <p>STAR WARS ET CHAR À VOILE<br>
+                        Air pur, beauté de la palmeraie, immensité des paysages … la région se prête au dépaysement et à la contemplation. Mais il existe d’autres manières de profiter du désert. Si vous êtes sportifs, pratiquez le quad dans les dunes d’Onk Jmel, le char à voile sur le Chott el-Jerid, le trekking dans les pistes de l’Atlas, ou encore le golf dans un impressionnant décor de rochers et de palmiers. En famille ou entre amis, visitez le parc à thème Chak Wak où s’entremêlent dinosaures et histoire des religions. Faites de l’accrobranche dans les palmiers au parc Sahara Lounge. Rejouez Star Wars sur l’authentique site de tournage de Mos Espa. Assistez à la cueillette des dattes (en novembre), et devenez incollable sur l’univers du palmier en visitant le complexe Eden Palm. Traversez d’impressionnants canyons à bord d’un petit train d’époque, le Lézard Rouge. Admirez les costumes et objets précieux mis en scène au musée Dar Chraïet, ou les objets de la vie quotidienne au Musée des arts et traditions populaires.<br>
+                        <br> 
+                        <br>  <br>
+                        <br>
+                        <br></p>
+                    <p></p>
+                  </div>
+                  <div class="container">
+                    <img src="tozeur/h2.jpg" alt="" >
+                    <p><strong>Que voir ?</strong></p>
+                    <p>CHOTTS, PALMIERS ET VIEUX QUARTIERS<br>
+                        Les vieux quartiers de Tozeur et Nefta offrent un visage très particulier. Suivez les ruelles et les passages couverts qui donnent une étonnante sensation de fraîcheur sous le soleil saharien. Admirez les façades de briques couleur de sable et leurs étonnants décors en relief. Puis rendez-vous dans les oasis géantes, véritables forêts de palmiers à l’ombre desquelles sont cultivés des vergers. A pied ou en calèche, appréciez l’atmosphère si particulière des palmeraies. Les alentours vous surprendront par la variété des paysages désertiques : lignes de montagnes, plateaux arides, dunes géantes, lacs salés scintillant au soleil. Traversez le gigantesque Chott el-Jerid, ancienne mer intérieure presque entièrement asséchée, recouverte d’une croûte de sel d’une blancheur éclatante. Suivez la route des Oasis de montagnes – Chebika, Tamerza, Midès – et explorez les canyons, les cascades et les palmeraies nichées dans le rocher. Plus au nord-est l’oasis de Gafsa, ville réputée pour ses bassins en pierres romaines et ses tentures aux couleurs vives.  <br>
+                        <br>  <br>
+                        <br>  <br><br>
+                        <br>  <br>
+                        <br>  <br>
+                        <br>
+                        <br></p>
+                  </div>
+                  <div class="container">
+                    <img src="tozeur/h3.jpg" alt="DATTES" >
+                    <p><strong>Que manger ?</strong></p>
+                    <p>AGNEAU ET DATTES<br>
+                        Tozeur est la capitale des dattes : découvrez les différentes variétés de ce fruit emblématique du sud, de l’allig rouge et sucrée à la deglet nour fondante et translucide. Goûtez les boulettes de dattes rfiss relevées d’une pointe de beurre salé. Dégustez la chakhchoukha du Jerid, viande d’agneau en sauce accompagnée de la galette de semoule traditionnelle mtabga. Régalez-vous de barkoukech, sorte de couscous à gros grains garni de viande et de petits poissons séchés. Plus insolite, testez le steack de dromadaire. A Tozeur, l’avenue qui longe la palmeraie est le rendez-vous des gourmets avec plusieurs restaurants offrant le choix entre cuisine régionale du Jerid, cuisine italienne et internationale. Vous pourrez aussi vous restaurer dans les hôtels de la région.</p>
+                    <br>
+                        <br>  <br>
+                        <br>  <br>
+                        <br><br><br></p>
+                  </div>
+
+            </section>
+
+ <!--==================== Hotels ====================-->
+            <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Meilleures Hotels</h1>
+   
+            </section>
+            
+        <section class="packages" id="packages">
+    <div class="box-container">
+
+        <div class="box">
+            <img src="tozeur/1.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Palm Beach Palace Tozeur </h3>
+                <p>Tozeur, Tunisie Aéroport</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> A partir de 317.87d<span>265.73d</span>  </div>
+                <div><br>
+                <br></div>
+                <a href="resrvation.html" class="btn">Reserver</a>
+            </div>
+        </div>
+   
+
+        <div class="box">
+            <img src="tozeur/2.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Ksar El Jerid Tozeur </h3>
+                <p>Tozeur, Tunisie</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> A partir de 245.67d <span>295.56d</span>  </div>
+                <div><br>
+                    <br></div>
+                <a href="#" class="btn">reserver</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="tozeur/3.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Golden Yasmin Ras El Ain  </h3>
+                <p>Tozeur, Tunisie Palmeraie.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">A partir de 196.80d </div>
+                <div><br>
+                    <br></div>
+                <a href="#" class="btn">Reserver</a>
+            </div>
+        </div>
+
+     
+        <div class="box">
+            <img src="tozeur/4.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>El Mouradi Tozeur  </h3>
+                <p>Tozeur , Tunisie Aéroport.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">A partir de  253.19d <span>266.25d</span> </div>
+                <div><br>
+                    <br></div>
+                <a href="resrvation.html" class="btn">Reserver</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="tozeur/6.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Anantara Tozeur Resort  </h3>
+                <p>Tozeur, Tunisie .</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">A partir de 1092.50d </div>
+                <div><br>
+                    <br></div>
+                <a href="#" class="btn">Reserver</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="tozeur/5.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>  Hafsi Tozeur  </h3>
+                <p>Tozeur, Tunisie Palmeraie.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 130d  </div>
+                <div><br>
+                    <br></div>
+                <a href="#" class="btn">Reserver</a>
+            </div>
+        </div>
+
+    </div>
+    </section>
+  <section id="contact">
+            <div class="wrapper">
+                <h3>Contactez-nous</h3>
+                <p>nous  savons que voyager est une aventure humaine mais également un engagement financier important pour vous. C'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos attentes pour vous aider dans la préparation de votre séjour, circuit ou voyage sur mesure.</p>
+                
+                <form>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="Votre nom">
+                    <label for="email">Email</label>
+                    <input type="text" id="name" placeholder="Votre email">
+                    <input type="submit" value="Ok" class="button-3">
+                    
+                </form>
+            </div>  
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

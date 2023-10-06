@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Canton</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="destinatins1.css">
+</head>
+ <body>
+	  <header>
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="">Acueill |</a></li>
+                        <li><a href="#steps">Description |</a></li>
+                        <li><a href="#best-sales-container">Meilleures Hotels |</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<div id="slider">
+	
+    <ul id="slideWrap">
+        <li> <img src="chine/Canton/chimelong-water-park.jpg"></li>
+        <li> <img src="chine/Canton/guangzhou-2006.jpg"> </li>
+        <li><img src="chine/Canton/guangzhou-layover-tour.jpg"></li>
+        <li> <img src="chine/Canton/museum-of-the-mausoleum.jpg"></li>
+        <li> <img src="chine/Canton/night-scene-of-canton.jpg"></li>
+        <li> <img src="chine/Canton/photo0jpg.jpg"></li>
+        <li> <img src="chine/Canton/photo1jpg.jpg"></li>
+    </ul>
+    <a id="next" href="#">&#8811;</a>
+    <a id="prev" href="#">&#8810;</a>
+    <script>var responsiveSlider = function() {
+
+        var slider = document.getElementById("slider");
+        var sliderWidth = slider.offsetWidth;
+        var slideList = document.getElementById("slideWrap");
+        var count = 1;
+        var items = slideList.querySelectorAll("li").length;
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        
+        window.addEventListener('resize', function() {
+          sliderWidth = slider.offsetWidth;
+        });
+        
+        var prevSlide = function() {
+          if(count > 1) {
+            count = count - 2;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = 1) {
+            count = items - 1;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+        };
+        
+        var nextSlide = function() {
+          if(count < items) {
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = items) {
+            slideList.style.left = "0px";
+            count = 1;
+          }
+        };
+        
+        next.addEventListener("click", function() {
+          nextSlide();
+        });
+        
+        prev.addEventListener("click", function() {
+          prevSlide();
+        });
+        
+        setInterval(function() {
+          nextSlide()
+        }, 8000);
+        
+        };
+        
+        window.onload = function() {
+        responsiveSlider();  
+        }</script>
+</div>
+<!--==================== Descriptions ====================-->
+ <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Description</h1>
+                    <div class="container">
+                    <img src="chine/Canton/photo9jpg.jpg" alt="Canton" >
+                    <p><br>Capitale de la province du Guangdong et troisième ville de Chine, Guangzhou est un carrefour commercial en pleine expansion. De par sa situation à l'estuaire du ZhuJiang, rivière des Perles, et sa proximité avec Hong Kong, cette ville constitue un port stratégique depuis plusieurs siècles. Découvrez la richesse de son architecture avec ses hautes tours en acier scintillantes qui jouxtent d'anciens temples. Visitez l'un de ses quatre parcs d'attractions Chimelong pour des sensations fortes et un divertissement assuré. Anciennement baptisée « Canton », Guangzhou est considérée comme le berceau de la cuisine traditionnelle chinoise. Les amateurs de gastronomie y trouveront plus de restaurants par habitant que nulle part ailleurs en Chine.
+
+                        <br>  <br>
+                        <br>  <br>
+                        <br> <br>
+                    </p>
+                  
+            </section>
+<!--==================== Les immanquables ====================-->
+<section class="best-sales-container" id="best-sales">
+    <h1 class="section-title">Les immanquables</h1>
+
+</section>
+
+<section class="packages" id="packages">
+<div class="box-container">
+
+<div class="box">
+<img src="chine/Canton/1.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building "></i> Chimelong Safari Park</h3>
+   <p>Zoos</p>
+    <a href="http://www.chimelong.com/" class="btn">VOIR PLUS</a>
+
+</div>
+</div>
+<div class="box">
+<img src="chine/Canton/2.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i>GMuseum of the Western Han Dynasty Mausoleum of the Nanyue King</h3>
+   <p> Musées spécialisés</p>
+    <a href="http://www.gznywmuseum.com/" class="btn">VOIR PLUS</a>
+
+</div>
+</div>
+
+<div class="box">
+<img src="chine/Canton/3.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i> Chen Clan Ancestral Hall-Folk Craft Museum </h3>
+   <p>
+    Musées spécialisés</p>
+    <a href="https://www.gzchenjiaci.com/MYwebsite/rc/my_index.htm" class="btn">VOIR PLUS</a>
+</div>
+</div>
+
+<div class="box">
+<img src="chine/Canton/4.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i> Chimelong Paradise</h3>
+   <p>
+    Parcs d'attractions & Parcs à thème</p>
+   <a href="https://www.thethemeparkguy.com/park/chime-long-paradise/photos" class="btn">VOIR PLUS</a>
+
+</div>
+</div>
+</div>
+</section>
+<!--==================== RESTAURANTS ====================-->
+<section class="best-sales-container" id="best-sales">
+    <h1 class="section-title">Restaurants</h1>
+
+</section>
+
+<section class="packages" id="packages">
+<div class="box-container">
+
+<div class="box">
+<img src="chine/Canton/food1.jpg" alt="">
+<div class="content">
+   <h3>  Le Grill
+</h3>
+   <p>No.988 Guangzhou Avenue Middle, Tianhe District 6/F, Hotel Sofitel Guangzhou Sunrich, Canton 510620 Chine</p>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
+    <div class="price">+86 20 3819 0898</div>
+    <a href="https://all.accor.com/hotel/6318/index.en.shtml#origin=sofitel" class="btn">VOIR PLUS</a>
+    </div>
+    </div>
+    <div class="box">
+        <img src="chine/Canton/food2.jpg" alt="">
+        <div class="content">
+            <h3> Social&Co    </h3>
+            <p>112-113 Shop, No. 6 Huajiu Road, Zhujiang New Town, Tianhe District, Canton 510623 Chine</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price">+86 20 3804 9243</div>
+            <div><br>
+                <br></div>
+            <a href="https://www.google.com/search?q=Social%26Co%20hotel&rlz=1C1GCEA_enTN967TN967&sxsrf=AOaemvJLL5z3jLv5d0WG3c5uqIo33Oj6mg:1640543860762&ei=XbbIYcmcJvPogwfU5aXgCQ&ved=2ahUKEwi3kryQjoL1AhWIoBQKHRFHAmoQvS56BAgEEDA&uact=5&oq=Social%26Co+hotel&gs_lcp=Cgdnd3Mtd2l6EAMyBwghEAoQoAE6BwgAEEcQsAM6BAgAEA06BAgAEB46BggAEAoQHjoGCAAQFhAeOggIABAWEAoQHkoECEEYAEoECEYYAFAjWL4eYMUmaAFwAngAgAHRAogBlQiSAQcwLjUuMC4xmAEAoAEByAEIwAEB&sclient=gws-wiz&tbs=lf:1,lf_ui:2&tbm=lcl&rflfq=1&num=10&rldimm=7548453742348736026&lqi=Cg9Tb2NpYWwmQ28gaG90ZWxaFSIPc29jaWFsJmNvIGhvdGVsKgIIA5IBC3RlbXBfYWdlbmN5qgENEAEqCSIFaG90ZWwoBA&rlst=f#rlfi=hd:;si:7548453742348736026,l,Cg9Tb2NpYWwmQ28gaG90ZWxaFSIPc29jaWFsJmNvIGhvdGVsKgIIA5IBC3RlbXBfYWdlbmN5qgENEAEqCSIFaG90ZWwoBA;mv:[[49.036571099999996,2.5313044],[48.867548299999996,2.0313314]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2" class="btn">VOIR PLUS</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="chine/Canton/food3.jpg" alt="">
+        <div class="content">
+            <h3> Westin Guangzhou HongMian Chinese Restaurant
+            </h3>
+            <p>No.6 Linhe Middle Road, Tianhe District The Westin Guangzhou, Canton 510610 Chine</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price"> +86 20 2826 6966</div>
+            <div><br>
+                <br></div>
+            <a href="https://westin.marriott.com/" class="btn">VOIR PLUS</a>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+</section>
+ <!--==================== Hotels ====================-->
+            <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Meilleures Hotels</h1>
+   
+            </section>
+            
+        <section class="packages" id="packages">
+    <div class="box-container">
+
+        <div class="box">
+            <img src="chine/Canton/h1.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Shangri-La Guangzhou</h3>
+                <p>No.1 Huizhan East Road, Haizhu District, Canton 510308 Chine</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> A partir de 417 TND</div>
+                <div><br>
+                <br></div>
+                <a href="https://www.shangri-la.com/guangzhou/shangrila/?WT.mc_id=SLIM_20190801_GLOBAL_TABA_TRIPADVISOR_ALWAYSON_WEBSITE-TA-TEXTLINK_TABA-Website-2019_NA-NA-NA&refid=5a2dcbdb-f580-4e20-96b5-164214fe0331&checkInDate=2022-05-26&checkOutDate=2022-05-27&rooms=%5B%7B%22adultNum%22%3A2%2C%22childNum%22%3A0%7D%5D&utm_source=tripadvisor_ba" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+        <div class="box">
+            <img src="chine/Canton/h2.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>China Hotel </h3>
+                <p>No.122 Liuhua Rd, Canton 510015 Chine</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 324 TND </div>
+                <div><br>
+                    <br></div>
+                <a href="https://chinahotelgz.com/en/" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="chine/Canton/h3.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Jumeirah Living Guangzhou</h3>
+                <p>No.14 Zhujiang East Road, Tianhe District, Canton 510623 Chine</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> A partir de   716 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.jumeirah.com/en/stay/guangzhou/jumeirah-living-guangzhou?utm_source=tripadvisor&utm_medium=meta-search:listing&utm_campaign=JLG-link&utm_content=website-link" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="chine/Canton/h4.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Grand Hyatt Guangzhou </h3>
+                <p>No.12 Zhujiang West Road, Pearl River New City, Tianhe District Step away to K11, Opera House, Guangdong New Museum and Flower City Plaza,, Canton 510623 Chine</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de  631 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.hyatt.com/fr-FR/hotel/china/grand-hyatt-guangzhou/guagh" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="chine/Canton/h5.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Rosewood Guangzhou</h3>
+                <p>No.6 East Zhujiang Road, Tianhe District, Canton 510623 Chine </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 726 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.rosewoodhotels.com/en/guangzhou?utm_source=tripadvisor.com&utm_medium=media&utm_campaign=business_listing&utm_content=GZU" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="chine/Canton/h6.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>  Sheraton Guangzhou Hotel</h3>
+                <p>No.208 Tianhe Road, Tianhe District, Canton 510620 Chine</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 1578 TND </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.marriott.fr/reservation/rateListMenu.mi?dclid=CjkKEQiAwqCOBhCznrrEtsbw07gBEiQAr97T_wZT7kfRQmh7CgZqJ6ndO-y-WENcqG6JIHlKjAGfNvPw_wcB&defaultTab=standard" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+    </div>
+    </section>
+  <section id="contact">
+            <div class="wrapper">
+                <h3>Contactez-nous</h3>
+                <p>nous  savons que voyager est une aventure humaine mais également un engagement financier important pour vous. C'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos attentes pour vous aider dans la préparation de votre séjour, circuit ou voyage sur mesure.</p>
+                
+                <form>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="Votre nom">
+                    <label for="email">Email</label>
+                    <input type="text" id="name" placeholder="Votre email">
+                    <input type="submit" value="Ok" class="button-3">
+                    
+                </form>
+            </div>  
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

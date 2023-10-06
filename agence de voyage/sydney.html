@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>sydney</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <link rel="stylesheet" href="destinatins1.css">
+</head>
+ <body>
+	  <header>
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="">Acueill |</a></li>
+                        <li><a href="#steps">Description |</a></li>
+                        <li><a href="#best-sales-container">Meilleures Hotels |</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<div id="slider">
+	
+    <ul id="slideWrap">
+        <li> <img src="australia/sydney/blue-diamond-tours-blue.jpg"> </li>
+        <li><img src="australia/sydney/caption (2).jpg"></li>
+        <li> <img src="australia/sydney/caption.jpg"></li>
+        <li> <img src="australia/sydney/manly-ferry.jpg"></li>
+        <li> <img src="australia/sydney/new-year-s-eve-sydney.jpg"></li>
+    </ul>
+    <a id="next" href="#">&#8811;</a>
+    <a id="prev" href="#">&#8810;</a>
+    <script>var responsiveSlider = function() {
+
+        var slider = document.getElementById("slider");
+        var sliderWidth = slider.offsetWidth;
+        var slideList = document.getElementById("slideWrap");
+        var count = 1;
+        var items = slideList.querySelectorAll("li").length;
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        
+        window.addEventListener('resize', function() {
+          sliderWidth = slider.offsetWidth;
+        });
+        
+        var prevSlide = function() {
+          if(count > 1) {
+            count = count - 2;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = 1) {
+            count = items - 1;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+        };
+        
+        var nextSlide = function() {
+          if(count < items) {
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = items) {
+            slideList.style.left = "0px";
+            count = 1;
+          }
+        };
+        
+        next.addEventListener("click", function() {
+          nextSlide();
+        });
+        
+        prev.addEventListener("click", function() {
+          prevSlide();
+        });
+        
+        setInterval(function() {
+          nextSlide()
+        }, 8000);
+        
+        };
+        
+        window.onload = function() {
+        responsiveSlider();  
+        }</script>
+</div>
+<!--==================== Descriptions ====================-->
+ <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Description</h1>
+                    <div class="container">
+                    <img src="australia/sydney/photo1jpg.jpg" alt="sydney" >
+                    <p><br>Sydney mélange une histoire riche et une modernité ardente dans un cadre urbain, mais toujours avec un esprit résolument australien. Pour comprendre pourquoi cette ville est si unique, empruntez le sentier sur les falaises entre Bondi et Coogee, et longez des plages, des piscines naturelles dans les rochers et des parcs luxuriants. Il y a aussi le magnifique opéra, un bâtiment qui s'élance dans le ciel comme un énorme bateau en origami au bord de l'emblématique baie de Sidney. La ville mérite aussi d'être admirée de haut : l'observatoire de la Sydney Tower Eye offre une vue imprenable qui permet de prendre la mesure de la ville et de son organisation.
+
+                        <br>  <br>
+                        <br>  <br>
+                        <br> <br>
+                    </p>
+                  
+            </section>
+<!--==================== Les immanquables ====================-->
+<section class="best-sales-container" id="best-sales">
+    <h1 class="section-title">Les immanquables</h1>
+
+</section>
+
+<section class="packages" id="packages">
+<div class="box-container">
+
+<div class="box">
+<img src="australia/sydney/1.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building "></i>Sydney Opera House</h3>
+   <p>
+    
+Monuments & Points d'intérêt • Bâtiments architecturaux • Théâtres</p>
+    <a href="https://www.sydneyoperahouse.com/" class="btn">VOIR PLUS</a>
+
+</div>
+</div>
+<div class="box">
+<img src="australia/sydney/2.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i>Taronga Zoo</h3>
+   <p> 
+    Zoos</p>
+    <a href="https://www.taronga.org.au/sydney-zoo" class="btn">VOIR PLUS</a>
+
+</div>
+</div>
+
+<div class="box">
+<img src="australia/sydney/3.jpg" alt="">
+<div class="content">
+   <h3> <i class="fas fa-building"></i>Cockatoo Island </h3>
+   <p>Îles</p>
+    <a href="https://www.cockatooisland.gov.au/en/" class="btn">VOIR PLUS</a>
+</div>
+</div>
+
+
+</div>
+</section>
+<!--==================== RESTAURANTS ====================-->
+<section class="best-sales-container" id="best-sales">
+    <h1 class="section-title">Restaurants</h1>
+
+</section>
+
+<section class="packages" id="packages">
+<div class="box-container">
+
+<div class="box">
+<img src="australia/sydney/food1.jpg" alt="">
+<div class="content">
+   <h3> Restaurant Hubert</h3>
+   <p>15 Bligh St, Sydney, Nouvelle-Galles du Sud 2000 Australie</p>
+    <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+    </div>
+    <div class="price">+61 2 9232 0881</div>
+    <div><br>
+        <br></div>
+    <a href="https://swillhouse.com/venues/restaurant-hubert/" class="btn">VOIR PLUS</a>
+    </div>
+    </div>
+    <div class="box">
+        <img src="australia/sydney/food2.jpg" alt="">
+        <div class="content">
+            <h3> The Ternary
+
+            </h3>
+            <p>100 Murray St Darling Harbour, Sydney, Nouvelle-Galles du Sud 2009 Australie</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price">+61 2 9934 0000</div>
+            <div><br>
+                <br></div>
+            <a href="https://www.theternary.com.au/" class="btn">VOIR PLUS</a>
+        </div>
+    </div>
+
+    <div class="box">
+        <img src="australia/Melbourne/food3.jpg" alt="">
+        <div class="content">
+            <h3> Bennelong Restaurant Sydney
+
+            </h3>
+            <p>Bennelong Point Sydney Opera House, Sydney, Nouvelle-Galles du Sud 2000 Australie</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price"> +61 2 9240 8000</div>
+            <div><br>
+                <br></div>
+            <a href="https://www.bennelong.com.au/" class="btn">VOIR PLUS</a>
+        </div>
+    </div>
+
+
+
+
+
+</div>
+</section>
+ <!--==================== Hotels ====================-->
+            <section class="best-sales-container" id="best-sales">
+				 <h1 class="section-title">Meilleures Hotels</h1>
+   
+            </section>
+            
+        <section class="packages" id="packages">
+    <div class="box-container">
+
+        <div class="box">
+            <img src="australia/sydney/h1.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Shangri-La Sydney</h3>
+                <p>176 Cumberland Street,The Rocks Sydney 2000, Sydney, Nouvelle-Galles du Sud 2000 Australie
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price"> A partir de 737 TND</div>
+                <div><br>
+                <br></div>
+                <a href="https://www.shangri-la.com/sydney/shangrila/?WT.mc_id=SLIM_20190801_GLOBAL_TABA_TRIPADVISOR_ALWAYSON_WEBSITE-TA-TEXTLINK_TABA-Website-2019_NA-NA-NA&refid=eb078010-5262-498a-bc11-2002a1a3f2d5&checkInDate=2022-05-26&checkOutDate=2022-05-27&rooms=%5B%7B%22adultNum%22%3A2%2C%22childNum%22%3A0%7D%5D&utm_source=tripadvisor_ba" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+        <div class="box">
+            <img src="australia/sydney/h2.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>PARKROYAL Darling Harbour </h3>
+                <p>150 Day St Darling Harbour, Sydney, Nouvelle-Galles du Sud 2000 Australie
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 461 TND </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.panpacific.com/en/hotels-and-resorts/pr-darling-harbour-sydney.html?utm_source=tripadvisor&utm_medium=business_listing&utm_campaign=hotel_website&property=prsyd" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="australia/sydney/h3.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>The Langham, Sydney
+                </h3>
+                <p>89-113 Kent St, Sydney, Nouvelle-Galles du Sud 2000 Australie
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> A partir de   1012 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.langhamhotels.com/en/the-langham/sydney/?htl=tlsyd&src=plist&eng=tripadvisorbl&size=na&cid=hotel_website_en_20160420&htl=tlsyd&src=plist&eng=tripadvisorbl&size=na&cid=hotel_website_en_20160420" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="australia/sydney/h4.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Rydges World Square Sydney Hotel</h3>
+                <p>389 Pitt St, Sydney, Nouvelle-Galles du Sud 2000 Australie</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de  428 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://www.rydges.com/rates/#/world-square-sydney-cbd" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="australia/sydney/h5.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>The Hughenden Boutique Hotel</h3>
+                <p>14 Queen St, Sydney, Nouvelle-Galles du Sud 2025 Australie
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="price">A partir de 308 TND  </div>
+                <div><br>
+                    <br></div>
+                <a href="https://quincymelbourne.com/?utm_source=tripadvisor_ba&utm_medium=affiliate&utm_campaign=busadv_hotellink&utm_content=quincy-hotel-melbourne" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="australia/Melbourne/h6.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Vibe Hotel Sydney</h3>
+                <p>111 Goulburn St, Sydney, Nouvelle-Galles du Sud 2000 Australie</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">A partir de 349 TND </div>
+                <div><br>
+                    <br></div>
+                <a href="https://vibehotels.com/book-accommodation/sydney/hotel-sydney/?utm_source=tripadvisor_ba&utm_medium=affiliate&utm_campaign=busadv_hotellink&utm_content=vibe-sydney" class="btn">VOIR PLUS</a>
+                <a href="resrvation.html" class="btn">reserver</a>
+
+            </div>
+        </div>
+
+    </div>
+    </section>
+  <section id="contact">
+            <div class="wrapper">
+                <h3>Contactez-nous</h3>
+                <p>nous  savons que voyager est une aventure humaine mais également un engagement financier important pour vous. C'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos attentes pour vous aider dans la préparation de votre séjour, circuit ou voyage sur mesure.</p>
+                
+                <form>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="Votre nom">
+                    <label for="email">Email</label>
+                    <input type="text" id="name" placeholder="Votre email">
+                    <input type="submit" value="Ok" class="button-3">
+                    
+                </form>
+            </div>  
+  </section>
+
+
+
+<body>
+
+</html>

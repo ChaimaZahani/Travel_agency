@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>chine</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="destination.css">
+</head>
+ <body>
+	  <header>
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="">Acueill |</a></li>
+                        <li><a href="#description">Description |</a></li>
+                        <li><a href="#minutes">En minutes |</a></li>
+                        <li><a href="#places">Meilleures places |</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+<div id="slider">
+	
+    <ul id="slideWrap">
+        <li><img src="chine/attraversare-la-cina.jpg"></li>
+        <li> <img src="chine/caption (1).jpg"> </li>
+        <li> <img src="chine/caption (2).jpg"></li>
+        <li> <img src="chine/caption.jpg"> </li>
+        <li><img src="chine/hangzou.jpg"></li>
+        <li><img src="chine/la-grande-muraglia.jpg"></li>
+        <li><img src="chine/silk-road.jpg"></li>
+
+
+    </ul>
+    <a id="next" href="#">&#8811;</a>
+    <a id="prev" href="#">&#8810;</a>
+    <script>var responsiveSlider = function() {
+
+        var slider = document.getElementById("slider");
+        var sliderWidth = slider.offsetWidth;
+        var slideList = document.getElementById("slideWrap");
+        var count = 1;
+        var items = slideList.querySelectorAll("li").length;
+        var prev = document.getElementById("prev");
+        var next = document.getElementById("next");
+        
+        window.addEventListener('resize', function() {
+          sliderWidth = slider.offsetWidth;
+        });
+        
+        var prevSlide = function() {
+          if(count > 1) {
+            count = count - 2;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = 1) {
+            count = items - 1;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+        };
+        
+        var nextSlide = function() {
+          if(count < items) {
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+          else if(count = items) {
+            slideList.style.left = "0px";
+            count = 1;
+          }
+        };
+        
+        next.addEventListener("click", function() {
+          nextSlide();
+        });
+        
+        prev.addEventListener("click", function() {
+          prevSlide();
+        });
+        
+        setInterval(function() {
+          nextSlide()
+        }, 8000);
+        
+        };
+        
+        window.onload = function() {
+        responsiveSlider();  
+        }</script>
+</div>
+
+<!--==================== Descriptions ====================-->
+ <section class="best-sales-container" id="description">
+				 <h1 class="section-title">Description</h1>
+                    <div class="container">
+                    <img src="chine/the-terracotta-warriors.jpg" alt="chine" >
+                    <p><br><br>Chine : <br>
+                        L'histoire de Chine comprend une grande muraille, une cité interdite et quelques milliers de soldats en terre cuite. Le cadre comprend le décor de science-fiction de Shanghai, les sommets vertigineux de Zhangjiajie et les plages tropicales de Hainan, mais le conte de cet antique royaume a commencé il y a bien longtemps.  <br>
+                        <br>  <br>
+                        <br>  <br>
+                        <br>  <br>
+                        <br>
+                    </p>
+                    </div>
+                    
+</div>
+            </section>
+<!--================description===================-->
+<section class="En minutes" id="minutes">
+    <h1 class="section-title">En minutes</h1>
+
+</section>
+<div class="video-container">
+  <video src="chine/Merveilles de CHINE _ Voyage en 2 minutes  _ vidéo HD.mp4" id="video-slider" loop autoplay muted style="width: 1200px;height: 600px; "></video>
+</div>
+
+<!--================places a visiter===================-->
+<section class="best-sales-container" id="places">
+  <h1 class="section-title">Meilleurs places</h1>
+
+</section>
+
+            
+        <section class="packages" id="packages">
+    <div class="box-container">
+
+        <div class="box">
+            <img src="chine/canton.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Canton </h3>
+                <p>La ville de Canton (ou Guangzhou en chinois) est la capitale provinciale la plus grande et la plus internationale du Sud de la Chiner</p>
+           
+                <a href="Canton.html" class="btn">voir plus</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="chine/Shanghai.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>Shanghai </h3>
+                <p>La plus grande ville de Chine et la plus cosmopolite</p>
+                
+                <a href="Shanghai.html" class="btn">voir plus</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="chine/pékin.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i>  Pékin </h3>
+                <p>Une ville où l'histoire et la modernité se partagent le devant de la scène</p>
+             
+                <a href="pekin.html" class="btn">voir plus</a>
+            </div>
+        </div>
+
+       
+
+    </div>
+    </section>
+    
+  <section id="contact">
+            <div class="wrapper">
+                <h3>Contactez-nous</h3>
+                <p>nous  savons que voyager est une aventure humaine mais également un engagement financier important pour vous. C'est pourquoi nous mettons un point d'honneur à prendre en compte chacune de vos attentes pour vous aider dans la préparation de votre séjour, circuit ou voyage sur mesure.</p>
+                
+                <form>
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" placeholder="Votre nom">
+                    <label for="email">Email</label>
+                    <input type="text" id="name" placeholder="Votre email">
+                    <input type="submit" value="Ok" class="button-3">
+                    
+                </form>
+            </div>  
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
